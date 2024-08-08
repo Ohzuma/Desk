@@ -1,10 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 body{
     background-color: #fff;
-    font-family: "Roboto", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
 }
 .parent-home{
@@ -16,7 +18,7 @@ body{
 
 @layer base{
     .nav-items{
-        @apply text-lg font-medium
+        @apply text-lg font-thin
     }
     /* .box{
         @apply w-[50rem] h-24  rounded-br-[2.5rem] rounded-bl-[2.5rem]   bg-white outline-8
@@ -34,29 +36,30 @@ body{
         @apply w-[30rem] block left-[31%] right-[50%] absolute top-40 h-24 rounded-br-[2.5rem] rounded-bl-[2.5rem]   bg-white z-50 outline-8
     
     } */
-     .box-2::after{
+     /* .box-2::after{
         content: '';
-        @apply block w-[3rem] h-10 rounded-br-[100rem] rounded-bl-[4rem]  bg-white absolute -right-3 -top-2
+        @apply hidden sm:block  w-[3rem] h-10 rounded-br-[100rem] rounded-bl-[4rem]  bg-white absolute -right-3 -top-2
      }
      .box-2::before{
         content: '';
-        @apply block w-[3rem] h-10 rounded-bl-[100rem]   rounded-tl-[4rem]   bg-white  absolute -left-3 -top-2
+        @apply hidden sm:block  w-[3rem] h-10 rounded-bl-[100rem]   rounded-tl-[4rem]   bg-white  absolute -left-3 -top-2
      }
 
      .box-3::after{
         content: '';
-        @apply block w-[3rem] h-10 rounded-br-[100rem] rounded-bl-[4rem]  bg-white  absolute -right-3 -top-2
+        @apply hidden sm:block  w-[3rem] h-10 rounded-br-[100rem] rounded-bl-[4rem]  bg-white  absolute -right-3 -top-2
      }
      .box-3::before{
         content: '';
-        @apply block w-[3rem] h-10 rounded-bl-[100rem]   rounded-tl-[4rem]   bg-white  absolute -left-3 -top-2
+        @apply hidden sm:block w-[3rem] h-10 rounded-bl-[100rem]   rounded-tl-[4rem]   bg-white  absolute -left-3 -top-2
+     } */
+     .box-1,.box-2,.box-3{
+        @apply overflow-x-hidden
      }
-.parent-home::after{
-    content: '';
-    @apply block absolute left-0 bg-white w-[25rem] h-[5rem] bottom-0 rounded-tr-[3rem]
-}
-.parent-home::before{
-    content: '';
-    @apply block absolute right-0 bg-white w-[25rem] h-[5rem] bottom-0 rounded-tl-[3rem]
+.hike{
+    background: linear-gradient(to right, #00020f, 
+      #d12a00); 
+-webkit-text-fill-color: transparent; 
+-webkit-background-clip: text;
 }
     }

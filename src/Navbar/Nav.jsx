@@ -18,8 +18,8 @@ const Nav = () => {
       </ul>
 
       <div className='flex gap-8'> 
-        <button className='text-xl font-bold'>Login</button>
-        <button className='flex justify-center items-center w-34 
+        <button className='text-lg font-medium'>Login</button>
+        <button className='flex text-lg font-medium justify-center items-center w-34 
          px-5 bg-black h-10 rounded-3xl text-white'>Get Started</button>
       </div>
      </div>
