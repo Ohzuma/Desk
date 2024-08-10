@@ -18,7 +18,7 @@ body{
 
 @layer base{
     .nav-items{
-        @apply text-lg font-thin
+        @apply text-xl md:text-lg font-thin
     }
     /* .box{
         @apply w-[50rem] h-24  rounded-br-[2.5rem] rounded-bl-[2.5rem]   bg-white outline-8
@@ -62,4 +62,29 @@ body{
 -webkit-text-fill-color: transparent; 
 -webkit-background-clip: text;
 }
-    }
+.service{
+    /* background-image: url('./Asset/img/wave\(1\).svg'); */
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-color: #d8d8d8;
+}
+.contact-info div{
+    @apply flex  gap-7 
+}
+.contact-info div p:nth-of-type(2){
+    @apply flex flex-col gap-2 justify-center
+}
+.contact-info div p:nth-of-type(1){
+    @apply bg-black text-white w-[2.5rem] h-[2.5rem] rounded-full flex items-center justify-center text-xl
+}
+.contact-info div p:nth-of-type(2) span:nth-of-type(1){
+    @apply text-xl font-bold
+}
+.contact-info div p:nth-of-type(2) span:nth-of-type(2){
+    @apply text-lg font-thin
+}
+.follows div span{
+    @apply bg-black text-white w-[2.5rem] h-[2.5rem] rounded-full flex items-center justify-center text-xl
+
+}
+   }
