@@ -7,6 +7,7 @@ import pic3 from '../Asset/img/graphics.jpeg'
 import pic4 from '../Asset/img/hike.jpeg'
 
 const Blog = () => {
+ 
   return (
     <section className='px-[1rem] sm:px-[3rem]  py-[4rem]'>
         <header className='flex flex-col items-center justify-center py-[3rem]'>
