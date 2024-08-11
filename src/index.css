@@ -8,6 +8,7 @@ body{
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    overflow-x: hidden;
 }
 .parent-home{
     background-image: url(./Asset/img/hike.jpeg);

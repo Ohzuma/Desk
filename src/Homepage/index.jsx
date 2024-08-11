@@ -8,7 +8,7 @@ const Index = () => {
       <Nav/>
       <section className='h-[90vh] w-full bg-white  px-[1rem] sm:px-[3rem] '>
     <div className='parent-home rounded-xl sm:rounded-3xl relative h-full w-full bg-blue-300 flex flex-col items-center '>
-    <div className='box-1 w-[30rem] xs:w-[30rem] sm:w-[35rem] md:w-[50rem] flex justify-center items-center  h-16 xs:h-28 sm:rounded-br-[2rem] 
+    <div className='box-1 overflow-y-hidden w-[30rem] xs:w-[30rem] sm:w-[35rem] md:w-[50rem] flex justify-center items-center  h-16 xs:h-28 sm:rounded-br-[2rem] 
      sm:rounded-bl-[2rem]  relative  first-line: bg-white  px-3'>
       <h1 className='text-[1.5rem] xs:text-[2rem] md:text-[3rem] px-[1rem] font-extrabold hike'>Desk, Everyone's Desk</h1>
     </div>
