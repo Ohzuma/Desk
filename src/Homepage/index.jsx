@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../Navbar/Nav'
+import Nav from '../Component/Navbar/Nav'
 import {Button} from '../Component/Button'
 // import Hike from '../Asset/img/hike.jpeg'
 const Index = () => {

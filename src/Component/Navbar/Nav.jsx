@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import { FiMenu } from "react-icons/fi";
+import { FiMenu } from "react-icons/fi";
 const Nav = () => {
   const [open,setOpen] = useState(false)
   return (
@@ -30,9 +30,9 @@ const Nav = () => {
       </div>
      </div>
 
-     <div className='md:hidden block text-black cursor-pointer'   onClick={()=> setOpen(!open)}>
-     {/* <FiMenu /> */}
-     open
+     <div className='md:hidden block text-black cursor-pointer hover:rotate-90 transition-all hover:transition-all'   onClick={()=> setOpen(!open)}>
+   <span className='text-2xl'>  <FiMenu />
+   </span>
      </div>
     </nav>
   )
