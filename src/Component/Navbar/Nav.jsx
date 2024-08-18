@@ -17,10 +17,10 @@ const Nav = () => {
 
      <ul className='flex md:flex-row flex-col  gap-8 nav-items'>
         <l1><a href="/">About Us</a></l1>
-        <l1><a href="/">Trails</a></l1>
-        <l1><a href="/">Guides</a></l1>
         <l1><a href="/">Community</a></l1>
         <l1><a href="/">Blog</a></l1>
+        <l1><a href="/">Services</a></l1>
+        <l1><a href="/">Contact Us</a></l1>
       </ul>
 
       <div className='flex flex-start flex-col md:flex-row gap-8'> 

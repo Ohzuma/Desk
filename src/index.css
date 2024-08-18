@@ -6,6 +6,7 @@
 
 html{
     overflow-x: hidden;
+    background-color: #fff;
 }
 body{
     background-color: #fff;
@@ -71,11 +72,11 @@ body{
     /* background-image: url('./Asset/img/wave\(1\).svg'); */
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-color: #d8d8d8;
+    background-color: #eeeeee;
 }
 .contact-info div:not(.follows){
     @apply flex flex-col md:flex-row  md:items-center gap-7 rounded-lg 
-    md:shadow-lg h-[10rem] md:h-[8rem] md:bg-gray-300 px-5 md:px-[3rem] md:py-[2rem]
+    md:shadow-lg h-[10rem] md:h-[8rem] md:bg-gray-200 px-5 md:px-[3rem] md:py-[2rem]  hover:scale-110 hover:transition-all transition-all 
 
 }
 .contact-info div p:nth-of-type(2){
@@ -113,4 +114,30 @@ form div textarea{
 form div input::placeholder,form div textarea::placeholder{
     @apply text-gray-800
 }
-   }
+.footer-items{
+    @apply flex flex-col gap-8 
+}
+.footer-items h3{
+    @apply text-xl font-medium
+}
+.footer-links{
+    @apply flex flex-col gap-3
+}
+.footer-links li{
+    @apply text-lg 
+}
+.footer-links li{
+    @apply   hover:underline hover:underline-offset-2 hover:transition-all transition-all 
+} 
+.footer-links input::placeholder{
+    @apply text-gray-800
+}
+}
+
+
+
+
+
+
+
+   

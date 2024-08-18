@@ -4,13 +4,13 @@ import { CiPhone,CiLocationOn,CiMail,CiFacebook,CiInstagram,CiTwitter} from "rea
  
 const Contact = () => {
   return (
-    <section className='bg-gray-300 px-[1rem] sm:px-[5rem]  py-[3rem]'>
+    <section className='bg-gray-200 px-[1rem] sm:px-[5rem]  py-[3rem]'>
        <header className='flex flex-col items-center justify-center py-[3rem]'>
        <h1 className='text-3xl font-bold flex items-center gap-5'> <span><CiPhone /></span> Get-In-Touch <span className='rotate-[260deg]'><CiPhone /></span></h1>
        <p className='text-lg text-center'>Get in touch with us through conact info or send a message</p>
        </header>
        <div className="grid grid-cols-1  lg:grid-cols-2 py-[3rem] gap-9  ">
-        <div className='bg-white rounded-lg h-auto px-5 md:px-[2rem] py-[3rem] shadow-lg mb-auto flex flex-col gap-5 contact-info'>
+        <div className='bg-white rounded-lg h-auto px-5 md:px-[2rem] py-[3rem] shadow-xl mb-auto flex flex-col gap-5 contact-info'>
          
             <div className=''>
                 <p><CiLocationOn /></p>
@@ -45,7 +45,7 @@ const Contact = () => {
               </p>
             </section>
         </div>
-        <div className='shadow-lg h-[30rem] mb-auto bg-white text-black px-[2rem] py-[3rem] rounded-2xl
+        <div className='shadow-xl h-[30rem] mb-auto bg-white text-black px-5 md:px-[2rem] py-[3rem] rounded-2xl
         flex flex-col gap-5 ' >
         <header>
                 <h1 className='text-2xl font-bold text-black'>Send a Message</h1>
@@ -60,7 +60,7 @@ const Contact = () => {
             <div className='h-[6rem]'>
                <textarea name="message" id="message" placeholder='Message'></textarea>
             </div>
-            <button className='border-2 border-black bg-white hover:bg-black transition-all hover:transition-all hover:text-white h-[3rem] font-medium  flex justify-center items-center text-lg w-32 text-black px-3 py-2 rounded-lg'>Submit</button>
+            <button className='border-2 border-black bg-black text-white hover:bg-black transition-all hover:transition-all hover:text-white h-[3rem] font-medium  flex justify-center items-center text-lg w-32 px-3 py-2 rounded-lg'>Submit</button>
 
             </form>
         </div>

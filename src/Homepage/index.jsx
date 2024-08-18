@@ -1,11 +1,10 @@
 import React from 'react'
-import Nav from '../Component/Navbar/Nav'
+ 
 import {Button} from '../Component/Button'
 // import Hike from '../Asset/img/hike.jpeg'
 const Index = () => {
   return (
     <div>
-      <Nav/>
       <section className='h-[90vh] w-full bg-white  px-[1rem] sm:px-[3rem] '>
     <div className='parent-home rounded-xl sm:rounded-3xl relative h-full w-full bg-blue-300 flex flex-col items-center '>
     <div className='box-1 overflow-y-hidden w-[30rem] xs:w-[30rem] sm:w-[35rem] md:w-[50rem] flex justify-center items-center  h-16 xs:h-28 sm:rounded-br-[2rem] 
