@@ -27,12 +27,12 @@ export const Card = ({pic,title,desc}) => {
  export const BlogCard =({mt,title,img,date,read,author})=>{
     return(
         <>
-        <div className={`h-[27rem] md:h-[31rem]  bg-black relative rounded-2xl group overflow-hidden ${mt}`}>
+        <div className={`h-[24rem] md:h-[31rem]  bg-black relative rounded-2xl group overflow-hidden ${mt}`}>
           <img src={img} alt="pic"  className='h-full w-full  object-cover rounded-2xl' />
-          <div className='absolute  h-full w-full bg-black/50 top-0 left-0 right-0 rounded-2xl'></div>
+          <div className='absolute  h-full w-full bg-black/0 top-0 left-0 right-0 rounded-2xl'></div>
           <div className='absolute bottom-0 md:-bottom-[30rem] md:group-hover:bottom-0 transition-all delay-100 group-hover:transition-all left-0 right-0 
            bg-black/90 rounded-br-2xl rounded-bl-2xl
-            text-white h-[13rem] md:h-[10rem] px-3 py-4 flex flex-col gap-1 justify-center'>
+            text-white h-[10rem] md:h-[10rem] px-3 py-4 flex flex-col gap-1 justify-center'>
               <p className='flex items-center gap-2'> 
                 <span className='font-bold text-lg'><CiCalendarDate /></span> 
                 <span className='font-thin text-[1rem]  '>{date}</span></p>

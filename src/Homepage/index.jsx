@@ -1,6 +1,7 @@
 import React from 'react'
  
 import {Button} from '../Component/Button'
+import Contributors from '../contributors/Contributors'
 // import Hike from '../Asset/img/hike.jpeg'
 const Index = () => {
   return (
@@ -28,6 +29,7 @@ Join our community of hikers and find the perfect trail for get expert advice,de
 
     </div>
       </section>
+      <Contributors/>
     </div>
   )
 }

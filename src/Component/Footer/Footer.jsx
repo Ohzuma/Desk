@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <section className=' mt-[9rem] relative   w-full h-full lg:h-[20rem] footer '>
      <div className='w-full px-[1rem] md:px-[4rem] h-full  py-[3rem]  
-     grid grid-cols-1 gap-8 place-content-center lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2'>
+     grid grid-cols-1 place-items-center gap-8 place-content-center lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2'>
 <div className="footer-items">
     <h3>Site Roadmap</h3>
     <ul className="footer-links">
