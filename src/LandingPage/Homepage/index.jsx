@@ -1,6 +1,6 @@
 import React from 'react'
  
-import {Button} from '../Component/Button'
+import {Button} from '../../Component/Button'
 import Contributors from '../contributors/Contributors'
 // import Hike from '../Asset/img/hike.jpeg'
 const Index = () => {

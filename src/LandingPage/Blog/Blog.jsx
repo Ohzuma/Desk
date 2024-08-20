@@ -1,10 +1,10 @@
 import React from 'react'
 import { BsSignpost2 } from "react-icons/bs";
-import { BlogCard } from '../Component/Card';
-import pic1 from '../Asset/img/developer.jpeg'
-import pic2 from '../Asset/img/writter.jpeg'
-import pic3 from '../Asset/img/graphics.jpeg'
-import pic4 from '../Asset/img/hike.jpeg'
+import { BlogCard } from '../../Component/Card';
+import pic1 from '../../Asset/img/developer.jpeg'
+import pic2 from '../../Asset/img/writter.jpeg'
+import pic3 from '../../Asset/img/graphics.jpeg'
+import pic4 from '../../Asset/img/hike.jpeg'
 
 const Blog = () => {
  

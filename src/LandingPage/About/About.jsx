@@ -1,21 +1,15 @@
 import React from 'react'
-import pic from '../Asset/img/hike.jpeg'
-import {Button} from '../Component/Button'
-import { BiRevision } from 'react-icons/bi'
-const Vision = () => {
+import pic from '../../Asset/img/hike.jpeg'
+import {Button} from '../../Component/Button'
+const About = () => {
   return (
-    <section className='px-[1rem] sm:px-[3rem] py-[1rem]  '>
-   <header className='flex flex-col items-center justify-center py-[3rem]'>
-       <h1 className='text-3xl font-bold flex items-center gap-5'> <span><BiRevision /></span> Our Vision <span><BiRevision /></span></h1>
-       <p className='text-lg text-center'>read our vision why this platform is created</p>
-       </header>
-   
+    <section  className='about px-[1rem] sm:px-[3rem] py-[1rem] mt-[7rem]'>
      <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center place-content-center justify-items-center'>
         <div className='h-[30rem] max-w-[35rem] sm:w-full md:max-w-full rounded-[2rem]'>
             <img src={pic} alt="about our company" className='h-full w-full rounded-[1rem] object-cover' />
         </div>
         <div className='flex flex-col gap-5'>
-            <h1 className='text-3xl font-bold'>Our Vision</h1>
+            <h1 className='text-3xl font-bold'>About Us</h1>
             <p className='text-lg break-all'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 Quo deserunt blanditiis ex cum repudiandae et, distinctio
                  fugit quidem obcaecati molestias numquam perspiciatis delectus 
@@ -30,4 +24,4 @@ const Vision = () => {
   )
 }
 
-export default Vision
+export default About

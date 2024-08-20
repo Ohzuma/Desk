@@ -4,7 +4,7 @@ import { CiPhone,CiLocationOn,CiMail,CiFacebook,CiInstagram,CiTwitter} from "rea
  
 const Contact = () => {
   return (
-    <section className='bg-gray-200 px-[1rem] sm:px-[5rem]  py-[3rem]'>
+    <section className='contact bg-gray-200 px-[1rem] sm:px-[5rem]  py-[3rem]'>
        <header className='flex flex-col items-center justify-center py-[3rem]'>
        <h1 className='text-3xl font-bold flex items-center gap-5'> <span><CiPhone /></span> Get-In-Touch <span className='rotate-[260deg]'><CiPhone /></span></h1>
        <p className='text-lg text-center'>Get in touch with us through conact info or send a message</p>

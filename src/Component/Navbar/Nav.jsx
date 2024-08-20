@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import { FiMenu } from "react-icons/fi";
+import {Link} from 'react-router-dom'
 const Nav = () => {
   const [open,setOpen] = useState(false)
   return (
     <nav className='bg-white h-[70px]  w-full
     py-[2rem]  flex gap-5 items-center 
-    justify-between px-[1.5rem] md:px-[3rem] z-50 relative'>
+    justify-between px-[1rem] md:px-[3rem] z-50 relative'>
       <header>
 <a  href='/' className='text-xl font-bold'>Desk.com</a>
       </header>
@@ -16,11 +17,11 @@ const Nav = () => {
       bg-white  md:shadow-none md:bg-transparent ${open?'left-0':'-left-[40rem]'}`}> 
 
      <ul className='flex md:flex-row flex-col  gap-8 nav-items'>
-        <l1><a href="/">About Us</a></l1>
-        <l1><a href="/">Community</a></l1>
-        <l1><a href="/">Blog</a></l1>
-        <l1><a href="/">Services</a></l1>
-        <l1><a href="/">Contact Us</a></l1>
+        <l1><Link to="/">Home</Link></l1>
+        <l1><Link to="about">About Us</Link></l1>
+        <l1><Link to="/blog">Blog</Link></l1>
+        <l1><Link to="/">Contact us</Link></l1>
+        
       </ul>
 
       <div className='flex flex-start flex-col md:flex-row gap-8'> 

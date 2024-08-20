@@ -1,6 +1,6 @@
 import React from 'react'
-import Profile from '../Component/Profile'
-import Pic from '../Asset/img/hike.jpeg'
+import Profile from '../../Component/Profile'
+import Pic from '../../Asset/img/hike.jpeg'
 const Contributors = () => {
   return (
     <section className=' flex flex-col gap-1 px-[1rem] sm:px-[3rem] py-[1rem] relative'>
