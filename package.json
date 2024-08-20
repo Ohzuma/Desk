@@ -41,6 +41,6 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.7",
-    "@babel/plugin-proposal-private-property-in-object" 
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.7"
   }
 }
