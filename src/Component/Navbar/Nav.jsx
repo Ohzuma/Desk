@@ -25,9 +25,9 @@ const Nav = () => {
       </ul>
 
       <div className='flex flex-start flex-col lg:flex-row gap-8'> 
-        <button className=' flex items-start justify-start  text-xl md:text-lg font-thin'>Login</button>
-        <button className='flex text-xl font-medium justify-center items-center w-34 
-         px-5 bg-black h-10 rounded-3xl text-white'>Get Started</button>
+        <Link to={'/login'} className=' flex items-start justify-start  text-xl md:text-lg font-thin'>Login</Link>
+        <Link to={'/signup'} className='flex text-xl font-medium justify-center items-center w-34 
+         px-5 bg-black h-10 rounded-3xl text-white'>Get Started</Link>
       </div>
      </div>
 

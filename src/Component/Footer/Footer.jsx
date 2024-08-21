@@ -1,24 +1,25 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <section className=' mt-[9rem] relative   w-full h-full lg:h-[20rem] footer '>
-     <div className='w-full px-[1rem] md:px-[4rem] h-full  py-[3rem]  
-     grid grid-cols-1 place-items-center gap-8 place-content-center lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2'>
+     <div className='w-full px-[2rem] md:px-[4rem] h-full  py-[3rem]  
+     grid grid-cols-1 place-items-start gap-8 place-content-start lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2'>
 <div className="footer-items">
     <h3>Site Roadmap</h3>
     <ul className="footer-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/">About</a></li>
-        <li><a href="/">Community</a></li>
-        <li><a href="/">Blog</a></li>
+        <li><Link to={'/'}>Home</Link></li>
+        <li><Link to={'/about'}>About</Link></li>
+        <li><Link to={'/'}>Community</Link></li>
+        <li><Link to={'/blog'}>Blog</Link></li>
      
     </ul>
 </div>
 <div className="footer-items">
     <h3>Services</h3>
     <ul className="footer-links">
-        <li><a href="/">Content Writting</a></li>
+        <li><Link to={'/'}>Content Writting</Link></li>
         <li><a href="/">Advertisement</a></li>
         <li><a href="/">Graphic Design</a></li>
         <li><a href="/">Web Developement</a></li>

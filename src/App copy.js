@@ -10,8 +10,6 @@ import {
   Routes,
   Link,
 } from "react-router-dom";
-import Login from './pages/auth/Login';
-import Signup from './pages/auth/SignUp';
 
 function App() {
   return (
@@ -25,9 +23,6 @@ function App() {
       <Routes>
         <Route path='/blog' element={<BlogPage/>} />
         <Route path='/about' element={<AboutPage/>} />
-        <Route path='/login' element={<Login/>} />
-        <Route path='/signup' element={<Signup/>} />
-     
       </Routes>
 <Footer/>
     </div>

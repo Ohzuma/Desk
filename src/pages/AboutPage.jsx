@@ -1,10 +1,10 @@
 import React from 'react'
-import About from '../LandingPage/About/About'
 import Vision from '../LandingPage/Vision/Vision'
 import { ProfileCard } from '../Component/Card'
 import pic from '../Asset/img/developer.jpeg'
 import { Button } from '../Component/Button'
 import { AiTwotoneInfoCircle } from "react-icons/ai";
+import { BiUser } from 'react-icons/bi'
 
 const AboutPage = () => {
   return (
@@ -16,7 +16,7 @@ const AboutPage = () => {
  <section className='px-[1rem] sm:px-[3rem]  '>
    <header className='flex flex-col items-center justify-center py-[3rem]'>
        <h1 className='text-3xl font-bold flex items-center gap-5'> <span><AiTwotoneInfoCircle /></span> About Us <span><AiTwotoneInfoCircle /></span></h1>
-       <p className='text-lg text-center'>Get to know more about us</p>
+       <p className='text-lg text-center'>Get to know more about us, Our Vision, and Our Team Members</p>
        </header>
    
      <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center place-content-center justify-items-center'>
@@ -36,10 +36,11 @@ const AboutPage = () => {
         </div>
      </div>
     </section>
-<div className='mt-[5rem]'>
-
-<h1 className='text-2xl font-bold flex 
- text-black text-center justify-center items-center mb-[3rem]'>Our Team</h1>
+<div className='mt-[3rem]'>
+<header className='flex flex-col items-center justify-center py-[3rem]'>
+       <h1 className='text-3xl font-bold flex items-center gap-5'> <span><BiUser /></span> Our Team <span><BiUser /></span></h1>
+       <p className='text-lg text-center'>Individuals that contributed to this great platform</p>
+       </header>
     <div className='grid grid-cols-1 md:grid-cols-2  gap-y-8 px-2 gap-5
     lg:grid-cols-3  md:gap-5 place-content-center justify-items-center place-items-center '>
        <ProfileCard pic={pic} name={'John Doe'} 
