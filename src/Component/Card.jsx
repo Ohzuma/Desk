@@ -65,8 +65,8 @@ export const Card = ({pic,title,desc}) => {
 export const ProfileCard = ({pic,name,fb,ig,x,desc}) => {
   return (
     <>
-        <div className=' hover:scale-105 hover:transition-all transition-all  max-w-[21rem] w-[20rem] h-auto sm:h-[28rem]  rounded-lg shadow-2xl bg-white'>
-        <div className=' flex items-center justify-center bg-black relative h-[11rem] w-full'>
+        <div className=' hover:scale-105 hover:transition-all transition-all w-full  sm:max-w-[21rem] sm:w-[20rem] h-auto sm:h-[28rem]  rounded-lg shadow-2xl bg-white'>
+        <div className=' flex items-center justify-center bg-black rounded-lg relative h-[11rem] w-full'>
             <img src={pic} alt="Content Writing" className='h-[10rem] w-[10rem]
              rounded-full  absolute top-20  border-4 border-white' />
         </div>
