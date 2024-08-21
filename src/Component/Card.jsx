@@ -2,6 +2,8 @@ import React from 'react'
 import { AiOutlineRead } from "react-icons/ai";
 import { CiCalendarDate,CiTimer,CiUser } from "react-icons/ci";
  import { BoxButton } from './Button'
+import { Link } from 'react-router-dom';
+import { BiLogoFacebook, BiLogoFacebookSquare, BiLogoInstagram, BiLogoInstagramAlt, BiLogoTwitter } from 'react-icons/bi';
 
 
 export const Card = ({pic,title,desc}) => {
@@ -57,3 +59,34 @@ export const Card = ({pic,title,desc}) => {
         </>
     )
  }
+
+
+
+export const ProfileCard = ({pic,name,fb,ig,x,desc}) => {
+  return (
+    <>
+        <div className=' hover:scale-105 hover:transition-all transition-all  max-w-[21rem] w-[20rem] h-auto sm:h-[28rem]  rounded-lg shadow-2xl bg-white'>
+        <div className=' flex items-center justify-center bg-black relative h-[11rem] w-full'>
+            <img src={pic} alt="Content Writing" className='h-[10rem] w-[10rem]
+             rounded-full  absolute top-20  border-4 border-white' />
+        </div>
+        <article className='px-3 py-5 flex flex-col gap-3 mt-[4rem] items-center justify-center'>
+        <h1 className='text-xl font-bold'>{name}</h1>
+        <p className='text-center'>{desc}</p>
+        <div className="social flex gap-4">
+          <Link to={'/'}>
+         <span> <BiLogoFacebookSquare/></span> 
+          </Link>
+          <Link to={'/'}>
+         <span> <BiLogoInstagramAlt/></span> 
+          </Link>
+          <Link to={'/'}>
+          <span><BiLogoTwitter/></span> 
+          </Link>
+        </div>
+        </article>
+       </div>
+     
+    </>
+  )
+}

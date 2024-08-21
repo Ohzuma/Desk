@@ -10,7 +10,7 @@ const LandingPage = () => {
   return (
     <div>
       <Index/>
-      <About/>
+      <About mt={'mt-[7rem]'}/>
       <Service/>
       <Blog/>
       <Vision/>

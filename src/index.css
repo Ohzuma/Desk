@@ -93,7 +93,7 @@ body{
 .contact-info div p:nth-of-type(2) span:nth-of-type(2){
     @apply text-lg break-all font-thin
 }
-.follows p span{
+.follows p a{
     @apply bg-black text-white w-[2.5rem] h-[2.5rem] rounded-full flex items-center justify-center text-xl
 
 }
@@ -132,6 +132,9 @@ form div input::placeholder,form div textarea::placeholder{
 } 
 .footer-links input::placeholder{
     @apply text-gray-800
+}
+.social a span{
+    @apply flex text-3xl
 }
 }
 

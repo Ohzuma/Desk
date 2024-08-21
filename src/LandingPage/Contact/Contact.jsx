@@ -1,5 +1,6 @@
 import React from 'react'
 import { CiPhone,CiLocationOn,CiMail,CiFacebook,CiInstagram,CiTwitter} from "react-icons/ci";
+import { Link } from 'react-router-dom';
  
  
 const Contact = () => {
@@ -39,9 +40,9 @@ const Contact = () => {
                     <h1 className='text-xl font-bold'>Follow Us</h1>
                 </header>
               <p className='flex gap-5'>
-              <span><CiFacebook /></span>
-                <span><CiInstagram/></span>
-                <span><CiTwitter/></span>
+                <Link to={'/'} className='cursor-pointer'><CiFacebook /></Link>
+                <Link to={'/'} className='cursor-pointer'><CiInstagram/></Link>
+                <Link to={'/'} className='cursor-pointer'><CiTwitter/></Link>
               </p>
             </section>
         </div>
