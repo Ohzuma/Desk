@@ -9,7 +9,7 @@ import {   BiLogoFacebookSquare,  BiLogoInstagramAlt, BiLogoTwitter } from 'reac
 export const Card = ({pic,title,desc}) => {
   return (
     <>
-        <div className=' hover:scale-105 hover:transition-all transition-all  max-w-[23rem] h-auto sm:h-[30rem]  rounded-lg shadow-2xl bg-white'>
+        <div data-aos="fade-up" className=' hover:scale-105 hover:transition-all transition-all  max-w-[23rem] h-auto sm:h-[30rem]  rounded-lg shadow-2xl bg-white'>
         <div className='h-[15rem] w-full rounded-lg'>
             <img src={pic} alt="Content Writing" className='h-full w-full rounded-lg object-cover' />
         </div>
@@ -29,12 +29,12 @@ export const Card = ({pic,title,desc}) => {
  export const BlogCard =({mt,title,img,date,read,author})=>{
     return(
         <>
-        <div className={`h-[30rem] md:h-[31rem]  bg-black relative rounded-2xl group overflow-hidden ${mt}`}>
+        <div  data-aos="fade-up" className={`  h-[30rem] md:h-[31rem]  bg-black relative rounded-2xl group overflow-hidden ${mt}`}>
           <img src={img} alt="pic"  className='h-full w-full  object-cover rounded-2xl' />
           <div className='absolute  h-full w-full bg-black/0 top-0 left-0 right-0 rounded-2xl'></div>
           <div className='absolute bottom-0 md:-bottom-[30rem] md:group-hover:bottom-0 transition-all delay-100 group-hover:transition-all left-0 right-0 
            bg-black/90 rounded-br-2xl rounded-bl-2xl
-            text-white h-[12rem] md:h-[10rem] px-3 py-4 flex flex-col gap-1 justify-center'>
+            text-white h-[12rem] md:h-[15rem] px-3 py-4 flex flex-col gap-1 justify-center'>
               <p className='flex items-center gap-2'> 
                 <span className='font-bold text-lg'><CiCalendarDate /></span> 
                 <span className='font-thin text-[1.1rem]  '>{date}</span></p>
@@ -65,7 +65,7 @@ export const Card = ({pic,title,desc}) => {
 export const ProfileCard = ({pic,name,fb,ig,x,desc}) => {
   return (
     <>
-        <div className=' hover:scale-105 hover:transition-all transition-all w-full  sm:max-w-[21rem] sm:w-[20rem] h-auto sm:h-[28rem]  rounded-lg shadow-2xl bg-white'>
+        <div data-aos="fade-up" className=' hover:scale-105 hover:transition-all transition-all w-full  sm:max-w-[21rem] sm:w-[20rem] h-auto sm:h-[28rem]  rounded-lg shadow-2xl bg-white'>
         <div className=' flex items-center justify-center bg-black rounded-lg relative h-[11rem] w-full'>
             <img src={pic} alt="Content Writing" className='h-[10rem] w-[10rem]
              rounded-full  absolute top-20  border-4 border-white' />

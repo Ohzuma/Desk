@@ -11,7 +11,7 @@ const Contact = () => {
        <p className='text-lg text-center'>Get in touch with us through conact info or send a message</p>
        </header>
        <div className="grid grid-cols-1  lg:grid-cols-2 py-[3rem] gap-9  ">
-        <div className='bg-white rounded-lg h-auto px-5 md:px-[2rem] py-[3rem] shadow-xl mb-auto flex flex-col gap-5 contact-info'>
+        <div data-aos="fade-up" className='bg-white rounded-lg h-auto px-5 md:px-[2rem] py-[3rem] shadow-xl mb-auto flex flex-col gap-5 contact-info'>
          
             <div className=''>
                 <p><CiLocationOn /></p>
@@ -35,7 +35,7 @@ const Contact = () => {
                 </p>
             </div>
 
-            <section className='h-[5rem] flex flex-col gap-5 mt-[3rem] follows'>
+            <section data-aos="fade-up" className='h-[5rem] flex flex-col gap-5 mt-[3rem] follows'>
                 <header>
                     <h1 className='text-xl font-bold'>Follow Us</h1>
                 </header>
@@ -46,7 +46,7 @@ const Contact = () => {
               </p>
             </section>
         </div>
-        <div className='shadow-xl h-[30rem] mb-auto bg-white text-black px-5 md:px-[2rem] py-[3rem] rounded-2xl
+        <div data-aos="fade-up" className='shadow-xl h-[30rem] mb-auto bg-white text-black px-5 md:px-[2rem] py-[3rem] rounded-2xl
         flex flex-col gap-5 ' >
         <header>
                 <h1 className='text-2xl font-bold text-black'>Send a Message</h1>

@@ -2,11 +2,16 @@ import React, { useState } from 'react'
 import { FiMenu } from "react-icons/fi";
 import {Link} from 'react-router-dom'
 const Nav = () => {
+
+  document.addEventListener('click',(e)=>{
+    console.log('doc clicked',e.target.classList)
+  })
+
   const [open,setOpen] = useState(false)
   return (
-    <nav className='bg-white h-[70px]  w-full
+    <nav className='bg-white h-[70px]  w-full relative
     py-[2rem]  flex gap-5 items-center 
-    justify-between px-[1rem] md:px-[3rem] z-50 relative'>
+    justify-between px-[1rem] md:px-[3rem] z-50 '>
       <header>
 <a  href='/' className='text-xl font-bold'>Desk.com</a>
       </header>

@@ -5,10 +5,10 @@ const About = ({mt}) => {
   return (
     <section  className={`about px-[1rem] sm:px-[3rem] py-[1rem] ${mt}`}>
      <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center place-content-center justify-items-center'>
-        <div className=' h-[25rem] w-full md:h-[30rem] sm:w-full md:max-w-full rounded-[2rem]'>
+        <div data-aos="zoom-in-left" className=' h-[25rem] w-full md:h-[30rem] sm:w-full md:max-w-full rounded-[2rem]'>
             <img src={pic} alt="about our company" className='h-full w-full rounded-[1rem] object-cover' />
         </div>
-        <div className='flex flex-col gap-5'>
+        <div data-aos="zoom-in-right" className='flex flex-col gap-5'>
             <h1 className='text-3xl font-bold'>About Us</h1>
             <p className='text-lg break-all'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 Quo deserunt blanditiis ex cum repudiandae et, distinctio
