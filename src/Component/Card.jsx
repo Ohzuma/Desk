@@ -9,7 +9,7 @@ import {   BiLogoFacebookSquare,  BiLogoInstagramAlt, BiLogoTwitter } from 'reac
 export const Card = ({pic,title,desc}) => {
   return (
     <>
-        <div data-aos="fade-up" className=' hover:scale-105 hover:transition-all transition-all  max-w-[23rem] h-auto sm:h-[30rem]  rounded-lg shadow-2xl bg-white'>
+        <div data-aos="fade-up" className='  max-w-[30rem] w-full sm:w-full sm:max-w-full hover:scale-105 hover:transition-all transition-all  md:max-w-[23rem] h-auto sm:h-[30rem]  rounded-lg shadow-2xl bg-white'>
         <div className='h-[15rem] w-full rounded-lg'>
             <img src={pic} alt="Content Writing" className='h-full w-full rounded-lg object-cover' />
         </div>
@@ -29,7 +29,7 @@ export const Card = ({pic,title,desc}) => {
  export const BlogCard =({mt,title,img,date,read,author})=>{
     return(
         <>
-        <div  data-aos="fade-up" className={`  h-[30rem] md:h-[31rem]  bg-black relative rounded-2xl group overflow-hidden ${mt}`}>
+        <div  data-aos="fade-up" className={`  h-[30rem] max-w-[30rem] w-full sm:max-w-full sm:w-full  md:h-[31rem]  bg-black relative rounded-2xl group overflow-hidden ${mt}`}>
           <img src={img} alt="pic"  className='h-full w-full  object-cover rounded-2xl' />
           <div className='absolute  h-full w-full bg-black/0 top-0 left-0 right-0 rounded-2xl'></div>
           <div className='absolute bottom-0 md:-bottom-[30rem] md:group-hover:bottom-0 transition-all delay-100 group-hover:transition-all left-0 right-0 

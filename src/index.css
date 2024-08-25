@@ -10,14 +10,20 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #fff;
+    
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     overflow-x: hidden;
+
+    background-image: linear-gradient(rgba(250, 248, 248, 0.5),rgba(238, 238, 238, 0.1)), url(./Asset/img/pen.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 .parent-home{
-    background-image: url(./Asset/img/hike.jpeg);
+    background-image: url(./Asset/img/home.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -115,6 +121,9 @@ form div textarea{
 form div input::placeholder,form div textarea::placeholder{
     @apply text-gray-800
 }
+input{
+    @apply bg-white
+}
 .footer-items{
     @apply flex flex-col gap-8 justify-start items-start 
 }
@@ -138,7 +147,7 @@ form div input::placeholder,form div textarea::placeholder{
 }
 
 .blog div:nth-child(even){
-    @apply md:mt-8 
+    @apply sm:mt-8 
 }
 
 .input {
@@ -146,7 +155,7 @@ form div input::placeholder,form div textarea::placeholder{
   }
 
   .input input {
-    @apply h-full py-4 px-3 bg-slate-200 rounded-md border-black/80 max-w-[320px] w-[320px];
+    @apply h-full py-4 px-3 bg-white rounded-full border-black max-w-[320px] w-[320px];
   }
 
 }

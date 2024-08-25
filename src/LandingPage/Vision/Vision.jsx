@@ -1,5 +1,5 @@
 import React from 'react'
-import pic from '../../Asset/img/hike.jpeg'
+import pic from '../../Asset/img/vision.jpg'
 import {Button} from '../../Component/Button'
 import { BiRevision } from 'react-icons/bi'
 const Vision = () => {
