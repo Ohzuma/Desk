@@ -23,7 +23,7 @@ const Nav = () => {
      <ul className='flex lg:flex-row flex-col  gap-8 nav-items'>
         <l1  onClick={()=> setOpen(false)} ><Link to="/">Home</Link></l1>
         {/* <l1><Link to="about">About Us</Link></l1> */}
-        <l1  onClick={()=> setOpen(false)} ><Link to="/blog">Articles</Link></l1>
+        <l1  onClick={()=> setOpen(false)} ><Link to="/article">Articles</Link></l1>
         <l1  onClick={()=> setOpen(false)} ><Link to="/">Community</Link></l1>
         
       </ul>

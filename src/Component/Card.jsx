@@ -29,7 +29,7 @@ export const Card = ({pic,title,desc}) => {
  export const BlogCard =({mt,title,img,date,read,author})=>{
     return(
         <>
-        <div  data-aos="fade-up" className={`  h-[30rem] max-w-[30rem] w-full sm:max-w-full sm:w-full  md:h-[31rem]  bg-black relative rounded-2xl group overflow-hidden ${mt}`}>
+        <Link to={'/article:id'}  data-aos="fade-up" className={`  h-[30rem] max-w-[30rem] w-full sm:max-w-full sm:w-full  md:h-[31rem]  bg-black relative rounded-2xl group overflow-hidden ${mt}`}>
           <img src={img} alt="pic"  className='h-full w-full  object-cover rounded-2xl' />
           <div className='absolute  h-full w-full bg-black/0 top-0 left-0 right-0 rounded-2xl'></div>
           <div className='absolute bottom-0 md:-bottom-[30rem] md:group-hover:bottom-0 transition-all delay-100 group-hover:transition-all left-0 right-0 
@@ -55,7 +55,7 @@ export const Card = ({pic,title,desc}) => {
               </p>
            </div>
             </div>
-        </div>
+        </Link>
         </>
     )
  }

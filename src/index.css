@@ -16,7 +16,7 @@ body{
     font-style: normal;
     overflow-x: hidden;
 
-    background-image: linear-gradient(rgba(250, 248, 248, 0.5),rgba(238, 238, 238, 0.1)), url(./Asset/img/pen.jpg);
+    background-image: linear-gradient(to left of right rgba(250, 248, 248, 0.952),rgba(238, 238, 238, 0.973)), url(./Asset/img/pen.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

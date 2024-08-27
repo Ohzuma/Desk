@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import Login from './pages/auth/Login';
 import Signup from './pages/auth/SignUp';
+import SinglePage from './pages/SinglePage/SinglePage';
 
 function App() {
   return (
@@ -23,8 +24,9 @@ function App() {
         <Route path='/' element={<LandingPage/>} />
       </Routes>
       <Routes>
-        <Route path='/blog' element={<BlogPage/>} />
+        <Route path='/article' element={<BlogPage/>} />
         <Route path='/about' element={<AboutPage/>} />
+        <Route path='/article:id' element={<SinglePage/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/signup' element={<Signup/>} />
      

@@ -11,9 +11,8 @@ const Footer = () => {
     <h3>Site Roadmap</h3>
     <ul className="footer-links">
         <li><Link to={'/'}>Home</Link></li>
-        <li><Link to={'/about'}>About</Link></li>
         <li><Link to={'/'}>Community</Link></li>
-        <li><Link to={'/blog'}>Blog</Link></li>
+        <li><Link to={'/article'}>Article</Link></li>
      
     </ul>
 </div>

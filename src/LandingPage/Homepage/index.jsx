@@ -10,7 +10,7 @@ const Index = () => {
     <div className='parent-home rounded-xl sm:rounded-3xl relative h-full w-full bg-blue-300 flex flex-col items-center '>
     <div className='box-1 overflow-y-hidden w-[30rem] sm:w-[35rem] md:w-[50rem] flex justify-center items-center  h-16 sm:h-25 rounded-br-[2rem] 
      rounded-bl-[2rem]  relative bg-white  px-3'>
-      <h1 className='text-[1.5rem] sm:text-[2.5rem] md:text-[3rem] px-[1rem] font-extrabold hike'>Desk, Everyone's Desk</h1>
+      <h1 className='text-[1.5rem] sm:text-[2rem] md:text-[3rem] px-[1rem] font-extrabold hike'>Desk, Everyone's Desk</h1>
     </div>
     <div className=' box-2 w-[25rem] sm:w-[30rem] md:w-[43rem]     
     h-32 sm:h-28 rounded-br-[2rem]    rounded-bl-[2rem]
