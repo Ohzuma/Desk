@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { FiMenu } from "react-icons/fi";
 import {Link} from 'react-router-dom'
+
+
+
 const Nav = () => {
-
-
-
   const [open,setOpen] = useState(false)
-
+// useEffect(()=>{
+// window.document.addEventListener('click',()=>{
+//     open&&setOpen(false)
+//   })
+// })
   return (
     <nav className='bg-white h-[70px]  w-full relative
     py-[2rem]  flex gap-5 items-center 
@@ -22,7 +26,6 @@ const Nav = () => {
 
      <ul className='flex lg:flex-row flex-col  gap-8 nav-items'>
         <l1  onClick={()=> setOpen(false)} ><Link to="/">Home</Link></l1>
-        {/* <l1><Link to="about">About Us</Link></l1> */}
         <l1  onClick={()=> setOpen(false)} ><Link to="/article">Articles</Link></l1>
         <l1  onClick={()=> setOpen(false)} ><Link to="/">Community</Link></l1>
         

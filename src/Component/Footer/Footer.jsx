@@ -28,10 +28,10 @@ const Footer = () => {
 <div className="footer-items">
     <h3>Useful Links</h3>
 <ul className="footer-links">
-        <li><a href="/">Get Started</a></li>
-        <li><a href="/">Login</a></li>
-        <li><a href="/">Help</a></li>
-        <li><a href="/">Community</a></li>
+        <li><Link to="/">Get Started</Link></li>
+        <li><Link to={'/'}L>ogin</Link></li>
+        <li><Link to={'/'}>Help</Link></li>
+        <li><Link to={'/'}>Community</Link></li>
  
     </ul>
 </div>
