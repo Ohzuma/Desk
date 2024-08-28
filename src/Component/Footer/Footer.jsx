@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <section className=' mt-[9rem] relative  bg-white w-full h-full lg:h-[20rem] footer '>
-     <div className='w-full px-[2rem] md:px-[4rem] h-full  py-[3rem]  
+    <section className=' mt-[9rem] relative  bg-white w-full h-full bottom-0 lg:h-[20rem] footer '>
+     <div className='relative h-full w-full'>
+     <div className='w-full absolute bottom-0 px-[2rem] md:px-[4rem] h-full  py-[3rem]  
      grid grid-cols-1 place-items-start gap-8 place-content-start lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2'>
 <div className="footer-items">
     <h3>Site Roadmap</h3>
@@ -44,9 +45,10 @@ const Footer = () => {
  rounded-full h-[3rem] w-[4rem] border-none outline-none '><BiSearch/></button>
 </form>
 </div>
-     </div>
 
-<p className='flext justify-center items-center text-lg text-center px-[1rem] sm:px-[3rem]'>Copyright @ Desk.com 2024</p>
+     </div>
+{/* <p className=' w-full flext justify-center items-center text-lg text-center px-[1rem] sm:px-[3rem]'>Copyright @ Desk.com 2024</p> */}
+     </div>
 
     </section>
   )

@@ -26,13 +26,15 @@ const SinglePage = () => {
   return (
     <section className='px-3  md:px-[2rem] lg:px-[3rem] py-[3rem] '>
        <div className='grid grid-cols-1 gap-4 lg:gap-[3rem] md:grid-cols-3 '>
-       <div className='col-span-1 md:col-span-2 flex flex-col gap-8'>
+
+
+       <div className='col-span-1 md:col-span-2 flex flex-col gap-8 '>
             <div className='h-[30rem] w-full rounded-xl'>
                 <img src={pic} className='rounded-xl h-full w-full object-cover object-center'
                  alt="title of the post here" />
             </div>
 
-            <article className='flex flex-col gap-3'>
+            <article className='flex flex-col gap-3 '>
                 <p className='flex gap-3 items-center'>
                     <span className='font-semibold text-black text-xs uppercase'>Content Writting</span>
                         <span className='bg-black w-[2px] h-5 inline'></span>
@@ -50,25 +52,25 @@ const SinglePage = () => {
                 </p>
             </article>
         </div>
-        <section id='topDiv' className='bg-white  rounded-xl 
-         overflow-x-scroll md:overflow-y-scroll md:h-[500px]  sm:px-4 py-5'>
-          <div className='flex flex-col gap-5   '>
+
+
+        <section id='topDiv' className='rounded-xl 
+         overflow-x-scroll md:overflow-y-scroll md:h-[500px]  sm:px-4   flex flex-col gap-5'>
+
+
+          <div className='flex flex-col gap-5  bg-white  px-3 py-6 items-center rounded-lg shadow-xl '>
             <h1 className='font-bold text-xl'>Author Info</h1>
-          <div className='w-[5rem] h-[5rem] rounded-full'>
-            {/*ht <button className=' flex justify-center items-center gap-1'>
-                <span className='text-2xl'><BiHeart/></span> 
-            <span className='text-sm'>100</span></button>
-            <button className='text-2xl font-bold'><IoMdShareAlt/></button> */}
+          <div className='w-[7rem] h-[7rem] rounded-full'>
 
             <img src={pic1} alt="author" className='w-full h-full rounded-full object-cover' />
           </div>
 
-<div className='flex flex-col '>
+<div className='flex flex-col items-center justify-center'>
     <h1 className='text-xl font-semibold'>  Goodie Lily</h1>
-    <p className='text-lg'>Hey, I'm a grapgic designer, very passionate and ready to work and learn</p>
+    <p className='text-lg text-center' >Hey, I'm a grapgic designer, very passionate and ready to work and learn</p>
 </div>
 
-<div className='flex flex-col gap-3'>
+<div className='flex flex-col gap-3 items-center justify-center'>
     <h3 className='text-xl font-semibold'>Follow me on:</h3>
     <div className='flex gap-3'>
     <Link  to={'/'} className='cursor-pointer text-2xl'><CiFacebook /></Link>
@@ -79,7 +81,7 @@ const SinglePage = () => {
 
           </div>
 
-          <div className='mt-8 flex flex-col gap-4'>
+          <div className='mt-8 flex flex-col gap-5 bg-white  px-3 py-6 items-center rounded-lg shadow-xl '>
             <h1 className='font-bold text-xl'>More from this author</h1>
             <div className="grid grid-cols-2 md:grid-cols-1 gap-4">
 <BlogSingleCard img={pic4} title={"Let's RunAway Together"} date={'11/9/2024'} read={'7'} author={'Goody Goody'} />
