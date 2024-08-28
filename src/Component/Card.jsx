@@ -61,6 +61,42 @@ export const Card = ({pic,title,desc}) => {
  }
 
 
+ export const BlogSingleCard =({mt,title,img,date,read,author})=>{
+  return(
+      <>
+      <Link to={'/article:id'}  className={`  h-[22rem] max-w-[20rem] w-full  bg-black relative rounded-2xl group overflow-hidden ${mt}`}>
+        <img src={img} alt="pic"  className='h-full w-full  object-cover rounded-2xl' />
+        <div className='absolute  h-full w-full bg-black/0 top-0 left-0 right-0 rounded-2xl'></div>
+        <div className='absolute bottom-0 md:-bottom-[30rem] md:group-hover:bottom-0 transition-all delay-100 group-hover:transition-all left-0 right-0 
+         bg-black/90 rounded-br-2xl rounded-bl-2xl
+          text-white h-[15rem] md:h-[9rem] px-3 py-4 flex flex-col gap-1 justify-center'>
+            <p className='flex items-center gap-2'> 
+              <span className='font-bold text-lg'><CiCalendarDate /></span> 
+              <span className='font-thin text-[1.1rem]  '>{date}</span></p>
+            
+            <h1 className='flex items-center gap-2 text-lg break-all md:text-[1rem] lg:text-xl font-bold capitalize'>
+              <span><AiOutlineRead />
+              </span> <span >{title}</span>
+              </h1>
+              
+         <div className='flex flex-col md:flex-row items-start md:items-center gap-2'>
+         <p className='flex items-center gap-2'> 
+              <span className='font-bold text-lg'><CiTimer /></span> 
+              <span className='font-thin text-[1.1rem] '>{read} Minute Read</span></p>
+            <p className='flex items-center gap-2'>
+              <span className='font-bold text-lg'><CiUser /></span>
+             
+              <span className='font-thin text-[1.1rem] capitalize '> {author}</span> 
+            </p>
+         </div>
+          </div>
+      </Link>
+      </>
+  )
+}
+
+
+
 
 export const ProfileCard = ({pic,name,fb,ig,x,desc}) => {
   return (
