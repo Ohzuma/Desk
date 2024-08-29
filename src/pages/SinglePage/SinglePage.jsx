@@ -24,11 +24,19 @@ const SinglePage = () => {
 //   })
 
   return (
-    <section className='px-3  md:px-[2rem] lg:px-[3rem] py-[3rem] '>
+    <section className='px-3 mt-0  md:px-[2rem] lg:px-[3rem] py-[3rem] '>
        <div className='grid grid-cols-1 gap-4 lg:gap-[3rem] md:grid-cols-3 '>
 
 
        <div className='col-span-1 md:col-span-2 flex flex-col gap-8 '>
+       <p className='flex gap-3 items-center'>
+                    <span className='font-semibold text-black text-xs uppercase'>Content Writting</span>
+                        <span className='bg-black w-[2px] h-5 inline'></span>
+                    <span className='font-semibold text-black/80 text-xs uppercase'> 28 Feb 2024</span>
+                </p>
+                <h1 className='text-xl font-bold capitalize break-all'>Meet the dog who can find rare 
+                sea turle nests at a shocking success rate</h1>
+
             <div className='h-[30rem] w-full rounded-xl'>
                 <img src={pic} className='rounded-xl h-full w-full object-cover object-center'
                  alt="title of the post here" />
@@ -66,7 +74,7 @@ const SinglePage = () => {
           </div>
 
 <div className='flex flex-col items-center justify-center'>
-    <h1 className='text-xl font-semibold'>  Goodie Lily</h1>
+    <h1 className='text-xl font-bold uppercase'>  Goodie Lily</h1>
     <p className='text-lg text-center' >Hey, I'm a grapgic designer, very passionate and ready to work and learn</p>
 </div>
 

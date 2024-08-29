@@ -19,14 +19,10 @@ import { useEffect } from 'react';
 
 function App() {
 
-
-
   return (
-    <div className='relative'>
-
-      
+    
+    <div className='relative'>      
       <Nav/>
-
 {/* <createRoutesFromElements/> */}
       <Routes>
         <Route  path='/' element={<LandingPage/>} />
