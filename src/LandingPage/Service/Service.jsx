@@ -8,7 +8,7 @@ import { Card } from '../../Component/Card'
 
 const Service = () => {
   return (
-    <section  className='service px-[1rem] sm:px-[3rem] py-[4rem]  service'>
+    <section  className='service px-1 sm:px-[3rem] py-[4rem]  service'>
        <header className='flex flex-col items-center justify-center py-[3rem]'>
        <h1 className='text-3xl font-bold flex items-center gap-5 '><span><RiCustomerServiceLine /></span> Our Services <span><RiCustomerServiceLine /></span> </h1>
        <p className='text-lg text-center'>Get In Touch With Us For Any Of Our Service</p>

@@ -4,7 +4,7 @@ import {Button} from '../../Component/Button'
 import { BiRevision } from 'react-icons/bi'
 const Vision = () => {
   return (
-    <section className='px-[1rem] sm:px-[3rem] py-[1rem]  '>
+    <section className='px-1 sm:px-[3rem] py-[1rem]  '>
    <header className='flex flex-col items-center justify-center py-[3rem]'>
        <h1 className='text-3xl font-bold flex items-center gap-5'> <span><BiRevision /></span> Our Vision <span><BiRevision /></span></h1>
        <p className='text-lg text-center'>read our vision why this platform is created</p>
@@ -16,7 +16,7 @@ const Vision = () => {
         </div>
         <div data-aos="zoom-in-left" className='flex flex-col gap-5'>
             <h1 className='text-3xl font-bold'>Our Vision</h1>
-            <p className='text-lg break-all'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            <p className='text-[1rem] md:text-lg break-all'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 Quo deserunt blanditiis ex cum repudiandae et, distinctio
                  fugit quidem obcaecati molestias numquam perspiciatis delectus 
                  similique natus quae veritatis, magnam soluta quia officia iure

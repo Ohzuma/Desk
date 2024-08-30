@@ -8,17 +8,12 @@ html{
     overflow-x: hidden;
     background-color: #fff;
     scroll-behavior: smooth;
-    overflow-y: scroll;
-
 }
 body{
     
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    overflow: hidden;
-    overflow-y: scroll;
-
     background-image: linear-gradient( rgba(250, 248, 248, 0.281),rgba(238, 238, 238, 0.973)), url(./Asset/img/pen.jpg);
     background-position: center;
     background-size: cover;
@@ -30,54 +25,19 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: contain;
 }
 
 @layer base{
     .nav-items{
         @apply text-xl md:text-lg font-thin
     }
-    /* .box{
-        @apply w-[50rem] h-24  rounded-br-[2.5rem] rounded-bl-[2.5rem]   bg-white outline-8
-    }
-
-    .box::after::after{
-        content: '';
-       
-        @apply w-[40rem] block left-[25%] right-[25%] absolute top-20 h-24 rounded-br-[2.5rem] rounded-bl-[2.5rem]   bg-red-500 outline-8
     
-    }
-    .box::before{
-        content: '';
- 
-        @apply w-[30rem] block left-[31%] right-[50%] absolute top-40 h-24 rounded-br-[2.5rem] rounded-bl-[2.5rem]   bg-white z-50 outline-8
-    
-    } */
-     /* .box-2::after{
-        content: '';
-        @apply hidden sm:block  w-[3rem] h-10 rounded-br-[100rem] rounded-bl-[4rem]  bg-white absolute -right-3 -top-2
-     }
-     .box-2::before{
-        content: '';
-        @apply hidden sm:block  w-[3rem] h-10 rounded-bl-[100rem]   rounded-tl-[4rem]   bg-white  absolute -left-3 -top-2
-     }
-
-     .box-3::after{
-        content: '';
-        @apply hidden sm:block  w-[3rem] h-10 rounded-br-[100rem] rounded-bl-[4rem]  bg-white  absolute -right-3 -top-2
-     }
-     .box-3::before{
-        content: '';
-        @apply hidden sm:block w-[3rem] h-10 rounded-bl-[100rem]   rounded-tl-[4rem]   bg-white  absolute -left-3 -top-2
-     } */
      .box-1,.box-2,.box-3{
         @apply overflow-x-hidden
      }
-.hike{
-    /* background: linear-gradient(to right, #00020f, 
-      #d12a00); 
--webkit-text-fill-color: transparent; 
--webkit-background-clip: text; */
-}
+ 
 .service{
     /* background-image: url('./Asset/img/wave\(1\).svg'); */
     background-repeat: no-repeat;

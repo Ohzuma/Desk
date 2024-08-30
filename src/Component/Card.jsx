@@ -64,11 +64,11 @@ export const Card = ({pic,title,desc}) => {
 export const BlogCard =({title,img,date,read,author})=>{
       return(
           <>
-          <Link to={'/article:id'}  data-aos="fade-up" className={` px-3 py-3 shadow-xl bg-white max-w-[30rem] h-[27rem] w-full sm:max-w-full sm:w-full rounded-2xl  `}>
+          <Link to={'/article:id'}  data-aos="fade-up" className={` px-3 py-3 shadow-xl bg-white max-w-[30rem] h-[26rem] w-full sm:max-w-full sm:w-full rounded-2xl  `}>
             <img src={img} alt="pic"  className='h-[15rem] w-full  object-cover rounded-2xl' />
  
             <div className=' rounded-br-2xl rounded-bl-2xl
-              text-black    flex flex-col gap-1 justify-center'> 
+              text-black  py-4  flex flex-col gap-1 justify-center'> 
                 <p className='flex items-center gap-2'> 
                   <span className='font-bold text-2xl'><CiCalendarDate /></span> 
                   <span className='font-thin text-[1rem]  '>{date}</span></p>
@@ -97,11 +97,11 @@ export const BlogSingleCard =({title,img,date,read,author})=>{
   return(
       <>
       <Link to={'/article:id'}   className={` shadow-xl bg-white max-w-[30rem] h-[25rem] w-full sm:max-w-full sm:w-full rounded-2xl  `}>
-        <img src={img} alt="pic"  className='h-[15rem] w-full  object-cover rounded-2xl' />
+        <img src={img} alt="pic"  className='h-[15rem] w-full  object-cover rounded-2xl ' />
 
         <div className=' rounded-br-2xl rounded-bl-2xl
           text-black py-3  px-3  flex flex-col gap-1 justify-center'>
-            <p className='flex items-center gap-2'> 
+            <p className='flex items-center gap-2 mt-3'> 
               <span className='font-bold text-2xl'><CiCalendarDate /></span> 
               <span className='font-thin text-[1rem]  '>{date}</span></p>
             

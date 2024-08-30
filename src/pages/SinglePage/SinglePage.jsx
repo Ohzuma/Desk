@@ -24,7 +24,7 @@ const SinglePage = () => {
 //   })
 
   return (
-    <section className='px-3 mt-0  md:px-[2rem] lg:px-[3rem] py-[3rem] '>
+    <section className='px-1 mt-0  md:px-[2rem] lg:px-[3rem] py-[1rem] bg-white '>
        <div className='grid grid-cols-1 gap-4 lg:gap-[3rem] md:grid-cols-3 '>
 
 
@@ -48,7 +48,7 @@ const SinglePage = () => {
                         <span className='bg-black w-[2px] h-5 inline'></span>
                     <span className='font-semibold text-black/80 text-xs uppercase'> 28 Feb 2024</span>
                 </p>
-                <h1 className='text-xl font-bold capitalize break-all'>Meet the dog who can find rare 
+                <h1 className='text-lg md:text-xl font-bold capitalize '>Meet the dog who can find rare 
                 sea turle nests at a shocking success rate</h1>
 
                 <p className='text-lg text-black/80 break-all'>Lorem ipsum dolor sit amet consectetur 
@@ -63,23 +63,23 @@ const SinglePage = () => {
 
 
         <section id='topDiv' className='rounded-xl 
-         overflow-x-scroll md:overflow-y-scroll md:h-[500px]  sm:px-4   flex flex-col gap-5'>
+         overflow-x-scroll md:overflow-y-scroll md:h-[100vh]  md:px-4   flex flex-col gap-1 md:gap-5 mt-4 md:mt-0'>
 
 
-          <div className='flex flex-col gap-5  bg-white  px-3 py-6 items-center rounded-lg shadow-xl '>
-            <h1 className='font-bold text-xl'>Author Info</h1>
-          <div className='w-[7rem] h-[7rem] rounded-full'>
+          <div className='flex flex-row md:flex-col gap-5  md:bg-white  px-1 md:px-3 py-6 md:items-center rounded-lg md:shadow-xl '>
+            <h1 className='font-bold text-xl hidden md:block'>Author Info</h1>
+          <div className='w-[3rem] h-[3rem] md:w-[7rem] md:h-[7rem] rounded-full'>
 
             <img src={pic1} alt="author" className='w-full h-full rounded-full object-cover' />
           </div>
 
 <div className='flex flex-col items-center justify-center'>
-    <h1 className='text-xl font-bold uppercase'>  Goodie Lily</h1>
-    <p className='text-lg text-center' >Hey, I'm a grapgic designer, very passionate and ready to work and learn</p>
+    <h1 className='text-sm md:text-xl font-bold uppercase'>  Goodie Lily</h1>
+    <p className='text-lg text-center hidden md:block' >Hey, I'm a graphic designer, very passionate and ready to work and learn</p>
 </div>
 
 <div className='flex flex-col gap-3 items-center justify-center'>
-    <h3 className='text-xl font-semibold'>Follow me on:</h3>
+    {/* <h3 className='text-sm md:text-xl font-semibold'>Follow me on:</h3> */}
     <div className='flex gap-3'>
     <Link  to={'/'} className='cursor-pointer text-2xl'><CiFacebook /></Link>
      <Link to={'/'} className='cursor-pointer text-2xl'><CiInstagram/></Link>
@@ -89,7 +89,7 @@ const SinglePage = () => {
 
           </div>
 
-          <div className='mt-8 flex flex-col gap-5 bg-white  px-3 py-6 items-center rounded-lg shadow-xl '>
+          <div className='mt-1 flex flex-col gap-5 md:bg-white px-1 md:px-3 py-6 items-center rounded-lg shadow-xl '>
             <h1 className='font-bold text-xl'>More from this author</h1>
             <div className="grid grid-cols-2 md:grid-cols-1 gap-4">
 <BlogSingleCard img={pic4} title={"Let's RunAway Together"} date={'11/9/2024'} read={'7'} author={'Goody Goody'} />
