@@ -64,18 +64,18 @@ export const Card = ({pic,title,desc}) => {
 export const BlogCard =({title,img,date,read,author})=>{
       return(
           <>
-          <Link to={'/article:id'}  data-aos="fade-up" className={`px-1 sm:px-3 py-3 shadow-xl bg-white max-w-[30rem] h-[26rem] w-full sm:max-w-full sm:w-full rounded-2xl  `}>
-            <img src={img} alt="pic"  className='h-[15rem] w-full  object-cover rounded-2xl' />
+          <Link to={'/article:id'}  data-aos="fade-up" className={`px-1 sm:px-3 py-3 shadow-xl bg-white max-w-[30rem] h-[30rem] sm:h-[26rem] w-full sm:max-w-full sm:w-full rounded-2xl  `}>
+            <img src={img} alt="pic"  className='h-[18rem] sm:h-[15rem] w-full  object-cover rounded-2xl' />
  
             <div className=' rounded-br-2xl rounded-bl-2xl
               text-black  py-4  flex flex-col gap-1 justify-center'> 
                 <p className='flex items-center gap-2'> 
                   <span className='font-bold text-2xl'><CiCalendarDate /></span> 
-                  <span className='font-thin text-[1rem]  '>{date}</span></p>
+                  <span className='font-thin text-[1.1rem] sm:text-[1rem]  '>{date}</span></p>
                 
                 <h1 className='flex items-center  gap-2 text-xl break-all md:text-[1rem] lg:text-[1rem] font-bold'>
                   <span className='text-2xl '><AiOutlineRead />
-                  </span> <span className='text-[1rem] ' >{title}</span>
+                  </span> <span className='text-[1.2rem] sm:text-[1rem]  ' >{title}</span>
                   </h1>
                   
              <div className='flex flex-col md:flex-row items-start md:items-center gap-2'>
@@ -83,7 +83,7 @@ export const BlogCard =({title,img,date,read,author})=>{
                 <p className='flex items-center gap-2'>
                   <span className='font-bold text-2xl'><CiUser /></span>
                  
-                  <span className='font-thin text-[1rem] capitalize '> {author}</span> 
+                  <span className='font-thin text-[1.1rem] sm:text-[1rem] capitalize '> {author}</span> 
                 </p>
              </div>
               </div>
@@ -129,7 +129,7 @@ export const BlogSingleCard =({title,img,date,read,author})=>{
 export const ProfileCard = ({pic,name,fb,ig,x,desc}) => {
   return (
     <>
-        <div data-aos="fade-up" className=' hover:scale-105 hover:transition-all transition-all w-full  sm:max-w-[25rem] sm:w-[23rem] h-auto sm:h-[28rem]  rounded-lg shadow-2xl bg-white'>
+        <div data-aos="fade-up" className=' hover:scale-105 hover:transition-all transition-all w-full  sm:max-w-[25rem] sm:w-[23rem] h-[28rem] sm:h-[28rem]  rounded-lg shadow-2xl bg-white'>
         <div className=' flex items-center justify-center bg-black rounded-lg relative h-[11rem] w-full'>
             <img src={pic} alt="Content Writing" className='h-[10rem] w-[10rem]
              rounded-full  absolute top-20  border-4 border-white' />
