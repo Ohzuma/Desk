@@ -64,7 +64,7 @@ export const Card = ({pic,title,desc}) => {
 export const BlogCard =({title,img,date,read,author})=>{
       return(
           <>
-          <Link to={'/article:id'}  data-aos="fade-up" className={`px-1 sm:px-3 py-3 shadow-xl bg-white max-w-[30rem] h-[30rem] sm:h-[26rem] w-full sm:max-w-full sm:w-full rounded-2xl  `}>
+          <Link to={'/article:id'}  data-aos="fade-up" className={`px-1 sm:px-3 py-1 sm:py-3 shadow-xl bg-white max-w-[30rem] h-[30rem] sm:h-[26rem] w-full sm:max-w-full sm:w-full rounded-2xl  `}>
             <img src={img} alt="pic"  className='h-[18rem] sm:h-[15rem] w-full  object-cover rounded-2xl' />
  
             <div className=' rounded-br-2xl rounded-bl-2xl
