@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <section className=' mt-[9rem] relative  bg-white w-full h-full bottom-0 lg:h-[20rem] footer '>
      <div className='relative h-full w-full'>
-     <div className='w-full absolute bottom-0 px-[2rem] md:px-[4rem] h-full  py-[3rem]  
+     <div className='w-full   bottom-0 px-[2rem] md:px-[4rem] h-full  py-[3rem]  
      grid grid-cols-1 place-items-start gap-8 place-content-start lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2'>
 <div className="footer-items">
     <h3>Site Roadmap</h3>

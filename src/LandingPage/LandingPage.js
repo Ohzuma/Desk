@@ -5,15 +5,17 @@ import Blog from './Blog/Blog';
 import Contact from './Contact/Contact';
 import Index from './Homepage/index'
 import Vision from './Vision/Vision';
+import AboutPage from './AboutPage';
  
 const LandingPage = () => {
   return (
     <div>
       <Index/>
       <About mt={'mt-[7rem]'}/>
-      <Service/>
+      <AboutPage/>
       <Blog/>
       <Vision/>
+      <Service/>
       <Contact/>
     </div>
   )

@@ -13,7 +13,7 @@ const Nav = () => {
 //   })
 // })
   return (
-    <nav className='bg-white h-[70px]  w-full relative
+    <nav className='bg-white h-[70px]  w-full  shadow-xl
     py-[2rem]  flex gap-5 items-center 
     justify-between px-1 md:px-[3rem] z-50 '>
       <header>
@@ -26,11 +26,11 @@ const Nav = () => {
       bg-white  lg:shadow-none lg:bg-transparent ${open?'left-0':'-left-[40rem]'}`}> 
 
      <ul className='flex lg:flex-row flex-col  gap-8 nav-items'>
-     <form action="" className='flex relative  justify-center items-center max-w-[20rem] w-full md:w-[20rem] h-[2rem] mb-1 border-2 rounded-full border-black  '>
+     <form action="" className='flex relative  justify-center items-center max-w-[20rem] w-full md:w-[20rem] h-[2.5rem] mb-1 border-2 rounded-full border-black  '>
   <input type="text" name="search" id="search" placeholder='Search...'
   className='w-full h-full bg-white outline-none border-none  placeholder:text-black/90 rounded-full px-3 text-lg focus:outline-none'  />
     <button type='submit' className='bg-black text-white  flex justify-center items-center text-2xl 
- rounded-full h-[2rem] w-[5rem] border-none outline-none '><BiSearch/></button>
+ rounded-full h-[2.5rem] w-[5rem] border-none outline-none '><BiSearch/></button>
 </form>
         <l1  onClick={()=> setOpen(false)} ><Link to="/">Home</Link></l1>
         <l1  onClick={()=> setOpen(false)} ><Link to="/article">Articles</Link></l1>

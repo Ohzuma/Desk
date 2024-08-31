@@ -4,7 +4,7 @@ import Footer from './Component/Footer/Footer';
 import Nav from './Component/Navbar/Nav'
 
 import BlogPage from './pages/BlogPage'
-import AboutPage from './pages/AboutPage'
+import AboutPage from './LandingPage/AboutPage'
 import {
   Route,
   Routes,
@@ -21,7 +21,7 @@ function App() {
 
   return (
     
-    <div className='relative'>      
+    <div className=''>      
       <Nav/>
 {/* <createRoutesFromElements/> */}
       <Routes>

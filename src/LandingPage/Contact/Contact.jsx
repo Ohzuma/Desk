@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
  
 const Contact = () => {
   return (
-    <section className='contact px-1 sm:px-[2rem] lg:px-[5rem]  py-[3rem]'>
+    <section className='contact px-1 sm:px-[2rem] lg:px-[5rem] bg-white  py-[3rem]'>
        <header className='flex flex-col items-center justify-center py-[3rem]'>
        <h1 className='text-3xl font-bold flex items-center gap-5'> <span><CiPhone /></span> Get-In-Touch <span className='rotate-[260deg]'><CiPhone /></span></h1>
        <p className='text-lg text-center'>Get in touch with us through conact info or send a message</p>
        </header>
-       <div className="grid grid-cols-1  lg:grid-cols-2 py-[3rem] gap-9  ">
-        <div data-aos="fade-up" className=' bg-white rounded-lg h-auto px-5 md:px-[2rem] py-[3rem]  mb-auto flex flex-col gap-5 contact-info'>
+       <div className="grid grid-cols-1  lg:grid-cols-2 py-[1rem] gap-9  ">
+        <div data-aos="fade-up" className=' bg-white rounded-lg h-auto px-5 md:px-[2rem]  mb-auto flex flex-col gap-5 contact-info'>
          
             <div className=''>
                 <p><CiLocationOn /></p>

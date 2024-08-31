@@ -1,9 +1,8 @@
 import React from 'react'
 import pic from '../../Asset/img/vision.jpg'
-import { BiHeart } from 'react-icons/bi'
+import {  BiLogoFacebookSquare, BiLogoInstagramAlt, BiLogoTwitter } from 'react-icons/bi'
 import { IoMdShareAlt } from "react-icons/io";
 import { Link } from 'react-router-dom';
-import { CiFacebook, CiInstagram, CiTwitter } from 'react-icons/ci';
 import { BlogSingleCard } from '../../Component/Card';
 import pic1 from '../../Asset/img/developer.jpeg'
 import pic2 from '../../Asset/img/writter.jpeg'
@@ -80,11 +79,17 @@ const SinglePage = () => {
 
 <div className='flex flex-col gap-3 items-center justify-center'>
     {/* <h3 className='text-sm md:text-xl font-semibold'>Follow me on:</h3> */}
-    <div className='flex gap-3'>
-    <Link  to={'/'} className='cursor-pointer text-2xl'><CiFacebook /></Link>
-     <Link to={'/'} className='cursor-pointer text-2xl'><CiInstagram/></Link>
-    <Link to={'/'} className='cursor-pointer text-2xl'><CiTwitter/></Link>
-    </div>
+    <div className="social flex gap-4">
+          <Link to={'/'}>
+         <span> <BiLogoFacebookSquare/></span> 
+          </Link>
+          <Link to={'/'}>
+         <span> <BiLogoInstagramAlt/></span> 
+          </Link>
+          <Link to={'/'}>
+          <span><BiLogoTwitter/></span> 
+          </Link>
+        </div>
 </div>
 
           </div>

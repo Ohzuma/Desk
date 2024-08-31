@@ -64,7 +64,7 @@ export const Card = ({pic,title,desc}) => {
 export const BlogCard =({title,img,date,read,author})=>{
       return(
           <>
-          <Link to={'/article:id'}  data-aos="fade-up" className={` px-3 py-3 shadow-xl bg-white max-w-[30rem] h-[26rem] w-full sm:max-w-full sm:w-full rounded-2xl  `}>
+          <Link to={'/article:id'}  data-aos="fade-up" className={`px-1 sm:px-3 py-3 shadow-xl bg-white max-w-[30rem] h-[26rem] w-full sm:max-w-full sm:w-full rounded-2xl  `}>
             <img src={img} alt="pic"  className='h-[15rem] w-full  object-cover rounded-2xl' />
  
             <div className=' rounded-br-2xl rounded-bl-2xl
@@ -129,12 +129,12 @@ export const BlogSingleCard =({title,img,date,read,author})=>{
 export const ProfileCard = ({pic,name,fb,ig,x,desc}) => {
   return (
     <>
-        <div data-aos="fade-up" className=' hover:scale-105 hover:transition-all transition-all w-full  sm:max-w-[21rem] sm:w-[20rem] h-auto sm:h-[28rem]  rounded-lg shadow-2xl bg-white'>
+        <div data-aos="fade-up" className=' hover:scale-105 hover:transition-all transition-all w-full  sm:max-w-[25rem] sm:w-[23rem] h-auto sm:h-[28rem]  rounded-lg shadow-2xl bg-white'>
         <div className=' flex items-center justify-center bg-black rounded-lg relative h-[11rem] w-full'>
             <img src={pic} alt="Content Writing" className='h-[10rem] w-[10rem]
              rounded-full  absolute top-20  border-4 border-white' />
         </div>
-        <article className='px-3 py-5 flex flex-col gap-3 mt-[4rem] items-center justify-center'>
+        <article className='px-3 py-6 flex flex-col gap-3 mt-[4rem] items-center justify-center'>
         <h1 className='text-xl font-bold'>{name}</h1>
         <p className='text-center'>{desc}</p>
         <div className="social flex gap-4">
