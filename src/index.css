@@ -14,10 +14,11 @@ body{
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background-image: linear-gradient( rgba(250, 248, 248, 0.281),rgba(238, 238, 238, 0.973)), url(./Asset/img/pen.jpg);
+    background-image: linear-gradient( rgba(250, 248, 248, 0.26),rgba(238, 238, 238, 0.973)), url(./Asset/img/pen.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 
 }
 .parent-home{
