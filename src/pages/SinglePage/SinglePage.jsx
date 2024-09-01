@@ -23,7 +23,7 @@ const SinglePage = () => {
 //   })
 
   return (
-    <section className='px-1 mt-0  md:px-[2rem] lg:px-[3rem] py-[1rem] bg-white '>
+    <section className='px-3 mt-0  md:px-[2rem] lg:px-[3rem] py-[1rem] bg-white '>
        <div className='grid grid-cols-1 gap-4 lg:gap-[3rem] md:grid-cols-3 '>
 
 

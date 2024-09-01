@@ -9,7 +9,7 @@ import pic4 from '../../Asset/img/hike.jpeg'
 const Blog = () => {
  
   return (
-    <section className='px-1 sm:px-[3rem]  py-[4rem]'>
+    <section className='px-3 sm:px-[3rem]  py-[4rem]'>
         <header className='flex flex-col items-center justify-center py-[3rem]'>
        <h1 className='text-3xl font-bold flex items-center gap-5'> <span><BsSignpost2 /></span> Our Blog <span><BsSignpost2 /></span></h1>
        <p className='text-lg text-center'>Some Our Article From Different Writters</p>

@@ -9,10 +9,10 @@ import AboutPage from './AboutPage';
  
 const LandingPage = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Index/>
       <About mt={'mt-[7rem]'}/>
-      <AboutPage/>
+      {/* <AboutPage/> */}
       <Blog/>
       <Vision/>
       <Service/>

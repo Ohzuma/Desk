@@ -3,7 +3,7 @@ import pic from '../../Asset/img/about.jpg'
 import {Button} from '../../Component/Button'
 const About = ({mt}) => {
   return (
-    <section  className={`about px-1 sm:px-[3rem] py-[1rem] ${mt}`}>
+    <section  className={`about px-3 sm:px-[3rem] py-[1rem] ${mt}`}>
      <div className='grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-8 place-items-center place-content-center justify-items-center'>
         <div data-aos="zoom-in-left" className='  h-[25rem] w-full md:h-[30rem] sm:w-full md:max-w-full rounded-[2rem]'>
             <img src={pic} alt="about our company" className='h-full w-full rounded-[1rem] object-cover' />

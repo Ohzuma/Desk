@@ -30,7 +30,7 @@ const Footer = () => {
     <h3>Useful Links</h3>
 <ul className="footer-links">
         <li><Link to="/">Get Started</Link></li>
-        <li><Link to={'/'}L>ogin</Link></li>
+        <li><Link to={'/'}>Login</Link></li>
         <li><Link to={'/'}>Help</Link></li>
         <li><Link to={'/'}>Community</Link></li>
  
