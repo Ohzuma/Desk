@@ -13,8 +13,8 @@ const [sideNav,setSideNav] = useState(false)
 
   return (
     <section className=''>
-        <div className='flex gap-2 md:gap-8'>
-            <div  className={`${sideNav?'w-[17rem] transition-all ':'w-[4rem] md:w-[7rem] transition-all'} transition-all bg-white h-screen  shadow-xl px-3 md:px-12 py-10`}>
+        <div className='flex gap-2 md:gap-8 h-screen'>
+            <div  className={`${sideNav?'w-[17rem] transition-all ':'w-[4rem] md:w-[7rem] transition-all'} transition-all bg-white h-full  shadow-xl px-3 md:px-12 py-10`}>
                 <nav className='flex flex-col justify-between relative h-full'>
                     <ul className='flex flex-col gap-4'>
                         <li><Link to={'/'} className='flex flex-row items-center gap-5 text-lg text-black/80 hover:bg-black hover:transition-all transition-all '>  <span><RxDashboard/></span><span className={`${sideNav?'inline':'hidden'}`}>Dashboard</span> </Link></li>
