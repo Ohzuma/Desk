@@ -16,7 +16,10 @@ import Signup from './pages/auth/SignUp';
 import SinglePage from './pages/SinglePage/SinglePage';
 import { useEffect } from 'react';
 import UserProfile from './pages/UserProfile/UserProfile';
-import Index from './pages/Dashboard/Index';
+ 
+import Dashboard from './pages/Dashboard/Dashboard';
+import DashboardLayout from './pages/Dashboard/DashboardLayout';
+import AddPost from './pages/Dashboard/AddPost';
 
 
 function App() {
@@ -26,10 +29,9 @@ function App() {
     <div className=''>      
       <Nav/>
 {/* <createRoutesFromElements/> */}
+       
       <Routes>
         <Route  path='/' element={<LandingPage/>} />
-      </Routes>
-      <Routes>
         <Route path='/article' element={<BlogPage/>} />
         <Route path='/article:id' element={<SinglePage/>} />
         <Route path='/about' element={<AboutPage/>} />
@@ -37,8 +39,16 @@ function App() {
         <Route path='/signup' element={<Signup/>} />
         <Route path='/user/:name' element={<UserProfile/>} />
      
+
+            <Route path='/dashboard' element={<DashboardLayout/>}>
+            <Route index element={<Dashboard/>}/>
+            <Route path='addPost' element={<AddPost/>}/>
+            </Route>
+
+
+
       </Routes>
-      <Index/>
+      
       {/* <createRoutesFromElements/> */}
 <Footer/>
     </div>

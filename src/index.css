@@ -114,7 +114,7 @@ input{
 }
 
 .input {
-    @apply w-[full] h-[50px];
+    @apply w-full h-[50px];
   }
 
   .input input {
@@ -124,7 +124,12 @@ input{
   .btn::after{
     @apply bg-white  h-[5rem] block mt-5 absolute w-48 rounded-full
   }
-
+.post_input{
+    @apply h-[4rem] w-auto
+}
+.post_input input{
+    @apply w-full h-full focus:outline-none border-black border-[1.5px]
+}
 }
 
 
