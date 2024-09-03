@@ -15,8 +15,8 @@ import Login from './pages/auth/Login';
 import Signup from './pages/auth/SignUp';
 import SinglePage from './pages/SinglePage/SinglePage';
 import { useEffect } from 'react';
-import Dashboard from './pages/Dashboard/Dashboard';
 import UserProfile from './pages/UserProfile/UserProfile';
+import Index from './pages/Dashboard/Index';
 
 
 function App() {
@@ -35,10 +35,10 @@ function App() {
         <Route path='/about' element={<AboutPage/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/signup' element={<Signup/>} />
-        <Route path='/dashboard/:id' element={<Dashboard/>} />
         <Route path='/user/:name' element={<UserProfile/>} />
      
       </Routes>
+      <Index/>
       {/* <createRoutesFromElements/> */}
 <Footer/>
     </div>

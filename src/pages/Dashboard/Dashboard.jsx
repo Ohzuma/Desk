@@ -4,32 +4,38 @@ import { RxDashboard } from "react-icons/rx";
 import { MdOutlineCreate } from "react-icons/md";
 import { MdManageAccounts } from "react-icons/md";
 import { FaLessThan } from "react-icons/fa";
+import date from 'date-and-time';
 
 const Dashboard = () => {
 const [sideNav,setSideNav] = useState(false)
 
 
+const now = new Date();
+ 
 
 
   return (
-    <section className=''>
-        <div className='flex gap-2 md:gap-8 h-screen'>
-            <div  className={`${sideNav?'w-[17rem] transition-all ':'w-[4rem] md:w-[7rem] transition-all'} transition-all bg-white h-full  shadow-xl px-3 md:px-12 py-10`}>
-                <nav className='flex flex-col justify-between relative h-full'>
-                    <ul className='flex flex-col gap-4'>
-                        <li><Link to={'/'} className='flex flex-row items-center gap-5 text-lg text-black/80 hover:bg-black hover:transition-all transition-all '>  <span><RxDashboard/></span><span className={`${sideNav?'inline':'hidden'}`}>Dashboard</span> </Link></li>
-                        <li><Link to={'/'} className='flex flex-row items-center gap-5 text-lg text-black/80 hover:bg-black hover:transition-all transition-all '> <span><MdOutlineCreate/></span><span className={`${sideNav?'inline':'hidden'}`}>Create Post</span> </Link></li>
-                        <li><Link to={'/'} className='flex flex-row items-center gap-5 text-lg text-black/80 hover:bg-black hover:transition-all transition-all '> <span><MdManageAccounts/></span><span className={`${sideNav?'inline':'hidden'}`}>Manage Acct.</span> </Link></li>
-                        
-                    </ul>
+    <section className='w-full'>
+        <div className='h-screen w-full'>
+           
+            <div className='bg-slate-200  md:w-full px-3 py-5 rounded-lg flex flex-col gap-8'>
+            <header>
+                <h1 className='flex flex-row gap-3 text-2xl'>
+                    <span>Welcome Back,</span>
+                    <span>John Doe</span>
+                </h1>
+            </header>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-5  place-content-center'>
+                <div className='bg-slate-300 shadow-2xl h-[10rem] w-full sm:max-w-[30rem]'>
+                    <p className='flex flex-col gap-3'>
+                       <span>{date.format(now, 'ddd, MMM DD YYYY')}</span>
+                        <span>{date.format(now, 'hh:mm A [GMT]', true)}</span>
 
-                    <div onClick={()=> setSideNav(!sideNav)} className='absolute bottom-14 w-[2rem] h-[2rem]   bg-black text-white rounded-full flex justify-center items-center'> 
-                        <span className='text-lg '><FaLessThan/></span>
-                    </div>
-                </nav>
+                    </p>
+                    <h1>What Would You Love To Do Today?</h1>
+                </div>
+                <div className='bg-slate-300 shadow-2xl h-[10rem] w-full sm:max-w-[30rem]'></div>
             </div>
-            <div className='bg-slate-200  md:w-full px-3 py-5 rounded-lg '>
-
             <div className="overflow-x-scroll mx-auto w-full">
         <h1 className="text-lg font-bold mb-4">ALL POST</h1>
         <table className="min-w-full w-full  overflow-x-scroll  border-collapse border border-gray-200">

@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 // import 'aos/dist/aos.css'; 
 import ScrollToTop from './Component/ScrollToTop'
 
+
 // AOS.init({
 //   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
 //   offset: 700, // offset (in px) from the original trigger point
