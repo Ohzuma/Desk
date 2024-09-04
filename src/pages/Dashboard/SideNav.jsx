@@ -14,7 +14,7 @@ const SNav = () => {
 
 
   return (
-    <div  className={`${sideNav?'w-[17rem] transition-all ':'w-[4rem] md:w-[7rem] transition-all'} h-screen transition-all bg-white shadow-xl px-3 md:px-12 py-10`}>
+    <div  className={`${sideNav?'w-[17rem] transition-all ':'w-[4rem] md:w-[7rem] transition-all'} h-screen transition-all bg-white  px-3 md:px-12 py-10`}>
     <nav className='flex flex-col justify-between relative h-full'>
         <ul className='flex flex-col gap-4'>
             <li><Link to={'/dashboard'} className='flex flex-row items-center gap-5 text-lg text-black/80 hover:scale-110  hover:transition-all transition-all '>  <span><RxDashboard/></span><span className={`${sideNav?'inline':'hidden'}`}>Dashboard</span> </Link></li>

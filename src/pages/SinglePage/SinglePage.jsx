@@ -28,7 +28,8 @@ const SinglePage = () => {
 
 
        <div className='col-span-1 md:col-span-2 flex flex-col gap-8 '>
-       <p className='flex gap-3 items-center'>
+   <header className='hidden'>
+   <p className='flex gap-3 items-center'>
                     <span className='font-semibold text-black text-xs uppercase'>Content Writting</span>
                         <span className='bg-black w-[2px] h-5 inline'></span>
                     <span className='font-semibold text-black/80 text-xs uppercase'> 28 Feb 2024</span>
@@ -36,6 +37,7 @@ const SinglePage = () => {
                 <h1 className='text-xl font-bold capitalize break-all'>Meet the dog who can find rare 
                 sea turle nests at a shocking success rate</h1>
 
+   </header>
             <div className='h-[30rem] w-full rounded-xl'>
                 <img src={pic} className='rounded-xl h-full w-full object-cover object-center'
                  alt="title of the post here" />
@@ -94,8 +96,21 @@ const SinglePage = () => {
 
           </div>
 
-          <div className='mt-1 flex flex-col gap-5 md:bg-white px-1 md:px-3 py-6 items-center rounded-lg shadow-xl '>
+          <div className='mt-1 flex flex-col gap-5 md:bg-white px-1 md:px-3 py-6 items-center rounded-lg'>
             <h1 className='font-bold text-xl'>More from this author</h1>
+            <div className="grid grid-cols-2 md:grid-cols-1 gap-4">
+<BlogSingleCard img={pic4} title={"Let's RunAway Together"} date={'11/9/2024'} read={'7'} author={'Goody Goody'} />
+<BlogSingleCard img={pic3} title={'The Last Subber'} date={'2/9/2024'} read={'3'} author={'Peter Smith'} />
+<BlogSingleCard img={pic4} title={'Manifestation of the sons God'} date={'5/9/2024'} read={'10'} author={'John Doe'} />
+<BlogSingleCard img={pic2} title={'My Last Meal'} date={'9/9/2024'} read={'5'} author={'Lily Lily'} />
+<BlogSingleCard img={pic1} title={"Let's RunAway Together"} date={'11/9/2024'} read={'7'} author={'Goody Goody'} />
+
+            </div>
+          </div>
+
+
+          <div className='mt-1 flex flex-col gap-5 md:bg-white px-1 md:px-3 py-6 items-center rounded-lg'>
+            <h1 className='font-bold text-xl'>Explore More</h1>
             <div className="grid grid-cols-2 md:grid-cols-1 gap-4">
 <BlogSingleCard img={pic4} title={"Let's RunAway Together"} date={'11/9/2024'} read={'7'} author={'Goody Goody'} />
 <BlogSingleCard img={pic3} title={'The Last Subber'} date={'2/9/2024'} read={'3'} author={'Peter Smith'} />

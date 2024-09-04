@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom'
 const Nav = () => {
   const [open,setOpen] = useState(false)
   return (
-    <nav className='bg-white h-[70px]  w-full  shadow-xl md:shadow-none
+    <nav className='bg-white h-[70px]  w-full   
     py-[2rem]  flex gap-5 items-center 
     justify-between px-3 md:px-[3rem] relative z-[999]'>
       <header>

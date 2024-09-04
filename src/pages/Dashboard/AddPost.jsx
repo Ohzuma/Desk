@@ -16,12 +16,12 @@ const handleChange =(e)=>{
 }
 
   return (
-    <section className='bg-white mt-5 w-full md:w-[95%] px-3 md:px-8 h-full py-5 shadow-2xl  rounded-lg flex flex-col items-center gap-8 '>
+    <section className=' bg-slate-50 mt-5 w-full md:w-[95%] px-3 md:px-8 h-full py-5  rounded-lg flex flex-col items-center gap-8 '>
      <div className=" md:mx-[5rem] w-full">
         <form action="" className="w-full flex flex-col gap-5">
             <div className=' '>
                 
-                <div className='h-[13rem] border border-dotted border-black w-full flex flex-col justify-center items-center '>
+                <div className='h-[13rem] bg-white border border-dotted border-black w-full flex flex-col justify-center items-center '>
                     <span onClick={focusInput}  className="text-3xl cursor-pointer "><MdOutlineCloudUpload/></span>
                 <input required type="file" name="file" onChange={handleChange} ref={inputRef}  id="file" hidden  accept=".png, .jpg, .jpeg"  />
                 <button onClick={focusInput} type='button' className="text-xl font-semibold cursor-pointer">Browse File</button>
@@ -35,13 +35,18 @@ const handleChange =(e)=>{
                 <input type="text" placeholder="Enter Title" />
             </div>
             <div className='w-full   post_input'>
-                
-                <input type="text" placeholder="Enter Title" />
+                <select name="category" id="category">
+                  <p>select</p>
+                  <option value="value1" >Select Category</option>
+                  <option value="value2">value2</option>
+                  <option value="value3">value3</option>
+                  <option value="value4">vslue4</option>
+                </select>
+           
             </div>
           </div>
-          <div className='w-full   post_input'>
-                 
-                <input type="text" placeholder="Enter Title" />
+          <div className='w-full h-[15rem]  post_input'>
+              <textarea name="" id="" placeholder="Write Description"></textarea>
             </div>
         </form>
      </div>
