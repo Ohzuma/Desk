@@ -5,7 +5,7 @@ import Contributors from '../contributors/Contributors'
 const Index = () => {
   return (
     <div>
-      <section className='  h-[70vh] sm:h-[90vh] w-full bg-white -5 md:mt-0    '>
+      <section className='h-[100vh] w-full bg-white -5 md:mt-0    '>
       <div className='parent-home  relative h-full w-full flex flex-col items-center justify-center '>
     <div className='bg-black/70 absolute w-full h-full top-0 left-0 right-0 bottom-0 rounded-3xl '></div>
 <div className='flex flex-col justify-center items-center max-w-[45rem] z-10 gap-3 px-3'>
