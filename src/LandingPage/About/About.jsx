@@ -9,8 +9,8 @@ const About = ({mt}) => {
             <img src={pic} alt="about our company" className='h-full w-full rounded-[1rem] object-cover' />
         </div>
         <div data-aos="zoom-in-right" className='flex flex-col gap-5'>
-            <h1 className='text-3xl font-bold'>About Us</h1>
-            <p className='text-[1rem] md:text-lg break-all'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            <h1 className=' text-[3rem] font-bold'>About Us</h1>
+            <p className='text-[1rem]  sm:text-[1.3rem] break-all'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 Quo deserunt blanditiis ex cum repudiandae et, distinctio
                  fugit quidem obcaecati molestias numquam perspiciatis delectus 
                  similique natus quae veritatis, magnam soluta quia officia iure

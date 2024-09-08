@@ -4,10 +4,10 @@ import {Button} from '../../Component/Button'
 import { BiRevision } from 'react-icons/bi'
 const Vision = () => {
   return (
-    <section className='px-3 sm:px-[3rem] py-[1rem] bg-white '>
-   <header className='flex flex-col items-center justify-center py-[3rem]'>
-       <h1 className='text-3xl font-bold flex items-center gap-5'> <span><BiRevision /></span> Our Vision <span><BiRevision /></span></h1>
-       <p className='text-lg text-center'>read our vision why this platform is created</p>
+    <section className='px-3 sm:px-[3rem] py-[1rem] bg-white w-full '>
+   <header className='flex flex-col items-center justify-center py-[3rem] w-full'>
+       <h1 className='text-[2rem] sm:text-[3rem] font-bold flex items-center gap-5'> <span><BiRevision /></span> Our Vision <span><BiRevision /></span></h1>
+       <p className='text-3xl text-center'>Our vision why this platform is created</p>
        </header>
    
      <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center place-content-center justify-items-center'>

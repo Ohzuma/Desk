@@ -61,31 +61,37 @@ export const Card = ({pic,title,desc}) => {
 //  }
 
 
-export const BlogCard =({title,img,date,read,author})=>{
+export const BlogCard =({title,img,date,read,author,desc})=>{
       return(
           <>
-          <Link to={'/article:id'}  data-aos="fade-up" className={`px-1 sm:px-3 py-1 sm:py-3 shadow-xl bg-white max-w-[30rem] h-[30rem] sm:h-[26rem] w-full sm:max-w-full sm:w-full rounded-2xl  `}>
-            <img src={img} alt="pic"  className='h-[18rem] sm:h-[15rem] w-full  object-cover rounded-2xl' />
- 
-            <div className=' rounded-br-2xl rounded-bl-2xl
-              text-black  py-4  flex flex-col gap-1 justify-center'> 
-                <p className='flex items-center gap-2'> 
+          <Link to={'/article:id'}  data-aos="fade-up" className={`px-1 sm:px-3 py-1 sm:py-3   bg-white w-full rounded-xl  `}>
+            <img src={img} alt="pic"  className='h-[22rem]  w-full  object-cover rounded-xl' />
+<div className='text-black  py-4  flex flex-col gap-4 justify-center'> 
+<div className=' flex flex-row gap-2 items-center flex-wrap '>
+   
+                <p className='flex  flex-row  items-center gap-2'> 
                   <span className='font-bold text-2xl'><CiCalendarDate /></span> 
-                  <span className='font-thin text-[1.1rem] sm:text-[1rem]  '>{date}</span></p>
-                
+                  <span className='font-thin text-[1.1rem] sm:text-[1.3rem]  '>{date}</span>
+                  </p>
+ 
+ 
+                     <p className='flex  flex-row items-center gap-2'> 
+               <span className='font-bold  text-2xl'><CiTimer /></span> 
+                <span className='font-thin text-[1.1rem] sm:text-[1.3rem]'>{read} Minute Read</span>
+                </p>
+               
+                <p className='flex  flex-row items-center gap-2'>
+                  <span className='font-bold text-2xl'><CiUser /></span>
+                  <span className='font-thin text-[1.1rem] sm:text-[1.3rem] capitalize '> {author}</span> 
+                </p>
+
+</div>
+          
                 <h1 className='flex items-center  gap-2 text-xl break-all md:text-[1rem] lg:text-[1rem] font-bold'>
-                  <span className='text-2xl '><AiOutlineRead />
-                  </span> <span className='text-[1.2rem] sm:text-[1rem]  ' >{title}</span>
+                  <span className='text-2xl '><AiOutlineRead /> </span> 
+                  <span className='text-[1.5rem] sm:text-[2rem]  ' >{title}</span>
                   </h1>
                   
-             <div className='flex flex-col md:flex-row items-start md:items-center gap-2'>
-             
-                <p className='flex items-center gap-2'>
-                  <span className='font-bold text-2xl'><CiUser /></span>
-                 
-                  <span className='font-thin text-[1.1rem] sm:text-[1rem] capitalize '> {author}</span> 
-                </p>
-             </div>
               </div>
           </Link>
           </>

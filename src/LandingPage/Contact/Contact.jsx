@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <section className='contact px-3 sm:px-[2rem] lg:px-[5rem] bg-white  py-[3rem]'>
        <header className='flex flex-col items-center justify-center py-[3rem]'>
-       <h1 className='text-3xl font-bold flex items-center gap-5'> <span><CiPhone /></span> Get-In-Touch <span className='rotate-[260deg]'><CiPhone /></span></h1>
-       <p className='text-lg text-center'>Get in touch with us through conact info or send a message</p>
+       <h1 className='text-[2rem] sm:text-[3rem] font-bold flex items-center gap-5'> <span><CiPhone /></span> Get-In-Touch <span className='rotate-[260deg]'><CiPhone /></span></h1>
+       <p className='text-2xl text-center'>Get in touch with us through conact info or send a message</p>
        </header>
        <div className="grid grid-cols-1  lg:grid-cols-2 py-[1rem] gap-9  ">
         <div data-aos="fade-up" className=' bg-white rounded-lg h-auto px-3 sm:px-5 md:px-[2rem]  mb-auto flex flex-col gap-5 contact-info'>
@@ -35,7 +35,7 @@ const Contact = () => {
                 </p>
             </div>
 
-            <section data-aos="fade-up" className='h-[5rem] flex flex-col gap-5 mt-[3rem] follows'>
+            <section data-aos="fade-up" className='h-[5rem] hidden  flex-col gap-5 mt-[3rem] follows'>
                 <header>
                     <h1 className='text-xl font-bold'>Follow Us</h1>
                 </header>

@@ -13,9 +13,9 @@ const BlogPage = () => {
 {/* <div className='bg-black/90 h-[13rem] flex flex-col gap-[3rem] justify-center items-center rounded-2xl'> */}
 
 <header className='flex flex-col items-center justify-center py-2'>
-       <h1 className='text-3xl font-bold flex items-center gap-5'> <span><BiBook /></span> Latest Articles <span><BiBook /></span></h1>
-       <p className='text-lg text-center'>search through to read your favourite article from your favorite writter</p>
-<form action="" className='flex  justify-center items-center max-w-[40rem] w-[20rem] md:w-[30rem] h-[3rem] mb-1 border-2 rounded-full border-black  '>
+       <h1 className='text-3xl sm:text-[3rem] font-bold flex items-center gap-5'>   Latest Stories  </h1>
+       <p className='text-3xl hidden text-center'>Search through to read your favourite article from your favorite writter</p>
+<form action="" className='hidden  justify-center items-center max-w-[40rem] w-[20rem] md:w-[30rem] h-[3rem] mb-1 border-2 rounded-full border-black  '>
   <input type="text" name="search" id="search" placeholder='Search...'
   className='w-full h-full bg-white   placeholder:text-black/90 rounded-full px-3 text-lg focus:outline-none'  />
     <button type='submit' className='bg-black text-white flex justify-center items-center text-2xl 
@@ -24,7 +24,7 @@ const BlogPage = () => {
  </header>
 
 {/* </div> */}
-<div className='grid blog grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
+<div className='grid blog grid-cols-1 sm:grid-cols-2  gap-5'>
         <BlogCard img={pic1} title={'The Last Subber'} date={'2/9/2024'} read={'3'} author={'Peter Smith'} />
         <BlogCard img={pic2} title={'Manifestation of the sons God'} date={'5/9/2024'} read={'10'} author={'John Doe'} />
         <BlogCard img={pic3} title={'My Last Meal'} date={'9/9/2024'} read={'5'} author={'Lily Lily'} />
