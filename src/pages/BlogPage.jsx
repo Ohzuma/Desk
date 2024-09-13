@@ -8,7 +8,7 @@ import {BlogCard} from '../Component/Card'
 import { BiBook,BiSearch } from 'react-icons/bi'
 const BlogPage = () => {
   return (
-    <section className='px-3 sm:px-[3rem] py-[3rem] '>
+    <section className='px-3 sm:px-[3rem] py-[3rem] mt-[4rem]'>
     <div className=' flex flex-col gap-[3rem]  '>
 {/* <div className='bg-black/90 h-[13rem] flex flex-col gap-[3rem] justify-center items-center rounded-2xl'> */}
 

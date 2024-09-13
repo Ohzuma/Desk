@@ -6,7 +6,7 @@ const Vision = () => {
   return (
     <section className='px-3 sm:px-[3rem] py-[1rem] bg-white w-full '>
    <header className='flex flex-col items-center justify-center py-[3rem] w-full'>
-       <h1 className='text-[2rem] sm:text-[3rem] font-bold flex items-center gap-5'> <span><BiRevision /></span> Our Vision <span><BiRevision /></span></h1>
+       <h1 className='text-[2rem] sm:text-[3rem] font-bold flex items-center gap-5'>   Our Vision  </h1>
        <p className='text-3xl text-center'>Our vision why this platform is created</p>
        </header>
    

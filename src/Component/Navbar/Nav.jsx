@@ -8,9 +8,9 @@ import {Link} from 'react-router-dom'
 const Nav = () => {
   const [open,setOpen] = useState(false)
   return (
-    <nav className='bg-white h-[70px]  w-full   
+    <nav className='bg-white h-[70px] shadow-xl  w-full   
     py-[2rem]  flex gap-5 items-center 
-    justify-between px-3 md:px-[3rem] relative z-[999]'>
+    justify-between px-3 md:px-[3rem] fixed top-0  z-[999]'>
       <header>
 <a  href='/' className='text-xl font-bold'>Desk.com</a>
       </header>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Login = () => {
  
   return (
-    <main className="mt-[2rem]">
+    <main className="mt-[4rem]">
       <div className=" rounded-lg mx-auto xs:max-w-[300px] sm:max-w-[400px] h-[400px] py-10 px-5 bg-white sm:shadow-xl">
         <div>
           <div className=" flex flex-col gap-4 justify-center items-center  ">

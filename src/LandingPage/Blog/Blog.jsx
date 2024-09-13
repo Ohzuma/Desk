@@ -11,7 +11,7 @@ const Blog = () => {
   return (
     <section className='px-3 sm:px-[3rem]  py-[4rem]'>
         <header className='flex flex-col items-center justify-center py-[3rem]'>
-       <h1 className='text-[3rem] font-bold flex items-center gap-5'> <span><BsSignpost2 /></span> Stories <span><BsSignpost2 /></span></h1>
+       <h1 className='text-[3rem] font-bold flex items-center gap-5'>   Stories  </h1>
        <p className='text-3xl text-center'>Some Our Article From Different Writters</p>
        </header>
 
